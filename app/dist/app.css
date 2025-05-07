@@ -5506,22 +5506,37 @@ section.banner.s3.s2 .container .swiper-button-prev {
   border-radius: 26px;
   padding: 16px;
 }
-.page-title .page-title__main {
-  background: 
-    linear-gradient(rgba(0, 0, 0, 0.64), rgba(10, 10, 10, 0.4)), 
-    url('/assets/images/layouts/aboutt.jpg');
-  background-size: cover;
-  background-position: center;
-  backdrop-filter: blur(2px);
-  border-radius: 26px;
-  padding: 30px;
-  text-align: center;
-}
+  .page-title .page-title__main {
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.64), rgba(10, 10, 10, 0.4)), 
+      url('/assets/images/layouts/Untitled\ design.gif');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(2px);
+    border-radius: 26px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .page-title .page-title__main.about-page {
+    background: linear-gradient(rgba(0, 0, 0, 0.64), rgba(10, 10, 10, 0.4)),
+      url('/assets/images/layouts/Untitled\ design.gif');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .page-title .page-title__main.blog-details {
+    background: linear-gradient(rgba(41, 15, 112, 0.64), rgba(24, 19, 96, 0.4)),
+      url('/assets/images/layouts/blog-bg.jpg'); /* Use your original blog background image here */
+    background-size: cover;
+    background-position: center;
+  }
+    
 
 .page-title.contact-page .page-title__main {
   background: 
     linear-gradient(rgba(24, 24, 24, 0.64), rgba(46, 45, 45, 0.4)), 
-    url('/assets/images/layouts/aboutlatest2.jpg'); /* Contact page specific image */
+    url('/assets/images/layouts/Untitled\ design.gif'); 
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(2px);
@@ -7101,3 +7116,43 @@ body {
         transform: translateX(0);
       }
     }
+
+
+    .enterprise-section {
+      background-color: #130924;
+      padding: 25px 80px;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .enterprise-text {
+      font-size: 16px;
+      color: #a09b9b;
+      margin: 0;
+      text-align: left;
+      line-height: 1.5;
+    }
+    
+    .enterprise-button {
+      background-color: #151344;
+      color: #fff;
+      padding: 10px 22px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    
+    .enterprise-button:hover {
+      background-color: #333;
+    }
+
+
+    
+
+    
