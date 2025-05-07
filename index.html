@@ -10,6 +10,8 @@
     <!-- Styles -->
     <link rel="preconnect" href="h  ttps://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="../../../cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
@@ -19,7 +21,7 @@
     <!-- end Styles -->
 
     <!-- Favicon and Touch Icons  -->
-    
+
 
 </head>
 
@@ -41,11 +43,12 @@
                         <div class="header__body">
                             <div class="header__logo">
                                 <a href="index.html">
-                                    <img id="site-logo" src="assets/images/logo/logosb.png" alt="Peson" width="160"
-                                        height="38" data-retina="assets/images/logo/logo@2x.png" data-width="160"
+                                    <img id="site-logo" src="assets/images/logo/logosb.png" alt="Peson" width="120"
+                                        height="45" data-retina="assets/images/logo/logo@2x.png" data-width="120"
                                         data-height="38">
                                 </a>
                             </div>
+                            
 
                             <div class="header__right">
                                 <nav id="main-nav" class="main-nav">
@@ -55,7 +58,7 @@
                                             <a href="#">Home</a>
 
                                         </li>
-                                        
+
                                         <li class="menu-item">
                                             <a href="about.html">About</a>
                                         </li>
@@ -134,7 +137,7 @@
                     <div class="col-xl-6 col-md-12">
                         <div class="banner__left">
                             <div class="block-text">
-                                <h2 class="heading">The Best Community Centric <span
+                                <h2 class="heading" style="font-size: 45px;">The Best Community Centric <span
                                         class="arlo_tm_animation_text_word"></span> Marketplace</h2>
                                 <p class="desc">Envision a world where your data doesn’t just inform—it inspires. At the
                                     STACK Platform, we
@@ -143,6 +146,8 @@
 
                                 <a href="contact.html" class="action-btn"><span>Get Connected</span></a>
                             </div>
+
+                            
 
                             <!-- <div class="pay">
                             <h6>We are Monteno NFT</h6>
@@ -249,7 +254,7 @@
                                             fill="white" fill-opacity="0.5" />
                                     </svg>
                                 </div>
-                                
+
                                 <div class="swiper-button-prev s1">
                                     <svg width="10" height="15" viewBox="0 0 10 15" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -258,7 +263,7 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                
+
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
@@ -279,49 +284,49 @@
                                 <img class="img1" src="assets/images/layouts/aboutt2.jpg" alt="">
                                 <!-- <img class="img2" src="assets/images/layouts/aboutt2.jpg" alt=""> -->
                                 <img class="img3" src="assets/images/layouts/aboutt3.jpg" alt="">
-                                <img class="img4" src="assets/images/layouts/aboutt4.jpg" alt="">
-                                <img class="img5" src="assets/images/layouts/aboutt4.jpg" alt="">
+                                <img class="img4" src="assets/images/layouts/aboutlatest2.jpg" alt="">
+                                <img class="img5" src="assets/images/layouts/aboutlatest1.jpg" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-6 col-md-12">
                         <div class="block-text">
                             <h6 class="sub-heading"><span>About us</span></h6>
-                            <h3 class="heading wow" data-splitting>Empowering Digital Futures, Together</h3>
+                            <h3 class="heading">Empowering Digital Futures, Together</h3>
                             <p class="mb-17">Welcome to the future—where innovation meets purpose, and technology drives
-                                real
-                                change.</p>
+                                real change.</p>
                             <p class="mb-26">At Systems for Business Analytics (SBA), we are a young, dynamic team
-                                passionate about
-                                transforming the world through cutting-edge technology. Fueled by curiosity and a love
-                                for
-                                all things digital, we’re not just building solutions—we're shaping experiences that
-                                matter.</p>
-
-                            <!-- <p>Our mission is clear: to add real value to the digital transformation journey. We leverage the
-                                    latest and most advanced technologies from around the world, partnering with global leaders
-                                    like Amazon and Gemini, to create systems that are not only visually stunning but also
-                                    practical, efficient, and deeply impactful.</p> -->
-
-
-
-
+                                passionate about transforming the world through cutting-edge technology. Fueled by
+                                curiosity and a love for all things digital, we're not just building solutions—we're
+                                shaping experiences that matter.</p>
                             <br>
-
-                            <p>Let’s make something remarkable</p><br>
-                            <p>Let’s <b>create the future, together.</b></p><br>
+                            <p>Let's make something remarkable</p><br>
+                            <p>Let's <b>create the future, together.</b></p><br>
                             <a href="about.html" class="action-btn"><span>More About Us</span></a>
                         </div>
+
+                        <script>
+                            // This script ensures the animation plays when the page loads
+                            document.addEventListener('DOMContentLoaded', function () {
+                                const heading = document.querySelector('.heading');
+                                heading.style.animation = 'none';
+
+                                // Force a reflow to ensure the animation resets properly
+                                void heading.offsetWidth;
+
+                                heading.style.animation = 'slideInFromLeft 1.2s forwards';
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> <br><br><br><br><br><br>
         <!-- End About -->
 
 
 
 
-        
+
 
         <!-- Start Trends -->
         <style>
@@ -333,29 +338,33 @@
                 border-bottom: 2px solid white;
                 display: inline-block;
             }
-            
+
             body {
                 background: #0d0e26;
                 color: white;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
+
             .navbar {
                 background: #0b0c1e;
             }
+
             .navbar a {
                 color: white;
                 margin: 0 10px;
                 font-weight: 600;
             }
+
             .trends {
                 padding: 60px 40px;
             }
+
             .trends h2 {
-                font-size: 2.5rem;
-                margin-bottom: 40px;
-                border-bottom: 2px solid white;
-                display: inline-block;
+                font-weight: 100;
+                text-decoration: none;
+                border-bottom: none;
             }
+
             .trends__card {
                 background: #13143b;
                 border-radius: 12px;
@@ -364,99 +373,104 @@
                 text-align: left;
                 color: white;
             }
+
             .trends__card h3 {
                 font-size: 2rem;
                 margin-bottom: 5px;
             }
+
             .trends__card p {
                 margin: 0;
             }
-            .text-success { color: #4cd964; }
-            .text-danger { color: #ff3b30; }
-            
+
+            .text-success {
+                color: #4cd964;
+            }
+
+            .text-danger {
+                color: #ff3b30;
+            }
+
             .trends__card h4 {
                 font-family: 'Roboto', sans-serif;
                 font-weight: 300;
                 font-size: 1.5rem;
                 margin-bottom: 1rem;
             }
-            
+
             /* Rainbow Gradient Effect for Trend Numbers */
             .trends__card h3 {
                 font-size: 2rem;
                 margin-bottom: 5px;
                 color: transparent;
-                background: linear-gradient(
-                    to right,
-                    #2841ae 0%,
-                    #986541 25%,
-                    #5795ce 50%, 
-                    #54867a 75%,
-                    #8a3bff 100%
-                );
+                background: linear-gradient(to right,
+                        #2841ae 0%,
+                        #986541 25%,
+                        #5795ce 50%,
+                        #54867a 75%,
+                        #8a3bff 100%);
                 -webkit-background-clip: text;
                 background-clip: text;
             }
-            
+
             /* Ensure equal chart container sizes */
             .chart-container {
                 position: relative;
                 height: 300px;
                 width: 100%;
             }
-            </style>
-                  
-            <!-- Trends Section -->
-            <section class="trends container">
-                <h2 style="font-weight: 100;">Trends</h2>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="trends__card " >
-                            <h3 style="font-weight: bold;" >2,103</h3>
-                            <p>Total Employees</p>
-                            <p class="text-danger">-0.13% less than yesterday</p>
-                        </div>
+        </style>
+
+        <!-- Trends Section -->
+        <section class="trends container">
+            <h2 style="font-weight: 100;">Analytics</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="trends__card ">
+                        <h3 style="font-weight: bold;">2,103</h3>
+                        <p>Total Employees</p>
+                        <p class="text-danger">-0.13% less than yesterday</p>
                     </div>
-                    <div class="col-md-4">
-                        <div class="trends__card">
-                            <h3 style="font-weight: bold;">1,477</h3>
-                            <p>On Time</p>
-                            <p class="text-success">+0.45% more than yesterday</p>
-                        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="trends__card">
+                        <h3 style="font-weight: bold;">1,477</h3>
+                        <p>On Time</p>
+                        <p class="text-success">+0.45% more than yesterday</p>
                     </div>
-                    <div class="col-md-4">
-                        <div class="trends__card">
-                            <h3 style="font-weight: bold;">655</h3>
-                            <p>Absent</p>
-                            <p class="text-success">+0.87% more than yesterday</p>
-                        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="trends__card">
+                        <h3 style="font-weight: bold;">655</h3>
+                        <p>Absent</p>
+                        <p class="text-success">+0.87% more than yesterday</p>
                     </div>
-                    <div class="col-md-4">
-                        <div class="trends__card">
-                            <h3 style="font-weight: bold;">626</h3>
-                            <p>Late Arrival</p>
-                            <p class="text-danger">-0.34% less than yesterday</p>
-                        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="trends__card">
+                        <h3 style="font-weight: bold;">626</h3>
+                        <p>Late Arrival</p>
+                        <p class="text-danger">-0.34% less than yesterday</p>
                     </div>
-                    <div class="col-md-4">
-                        <div class="trends__card">
-                            <h3 style="font-weight: bold;">645</h3>
-                            <p>Early Departure</p>
-                            <p class="text-danger">-0.53% less than yesterday</p>
-                        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="trends__card">
+                        <h3 style="font-weight: bold;">645</h3>
+                        <p>Early Departure</p>
+                        <p class="text-danger">-0.53% less than yesterday</p>
                     </div>
-                    <div class="col-md-4">
-                        <div class="trends__card">
-                            <h3 style="font-weight: bold;">981</h3>
-                            <p>Over Time</p>
-                            <p class="text-danger">-0.63% less than yesterday</p>
-                        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="trends__card">
+                        <h3 style="font-weight: bold;">981</h3>
+                        <p>Over Time</p>
+                        <p class="text-danger">-0.63% less than yesterday</p>
                     </div>
-                </div> <br> <br> <br>
-            
-                <!-- Charts -->
-                <div class="row mt-5">
-                    <!-- Bar Chart -->
+                </div>
+            </div> <br> <br> <br>
+
+            <!-- Charts -->
+            <!-- <div class="row mt-5">
                     <div class="col-md-6 mb-4">
                         <div class="trends__card p-4">
                             <h4 class="mb-3">Daily Attendance</h4>
@@ -466,7 +480,6 @@
                         </div>
                     </div>
             
-                    <!-- Pie Chart -->
                     <div class="col-md-6 mb-4">
                         <div class="trends__card p-4">
                             <h4 class="mb-3">Presence Overview</h4>
@@ -475,19 +488,17 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            
-            <!-- Chart.js -->
-            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-            <script>
-                // Set consistent chart dimensions
+                </div> -->
+        </section>
+
+        <!-- Chart.js -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+        <!-- <script>
                 const chartHeight = 300;
                 
                 const barCanvas = document.getElementById('barChart');
                 const barCtx = barCanvas.getContext('2d');
             
-                // Gradient for Bar Chart
                 const barGradient = barCtx.createLinearGradient(0, 0, 0, chartHeight);
                 barGradient.addColorStop(0, '#1e3c72');  // top
                 barGradient.addColorStop(1, '#2a5298');  // bottom
@@ -523,7 +534,6 @@
                     }
                 });
             
-                // Pie Chart
                 const pieCanvas = document.getElementById('pieChart');
                 const pieCtx = pieCanvas.getContext('2d');
             
@@ -534,9 +544,9 @@
                         datasets: [{
                             data: [1477, 626, 655],
                             backgroundColor: [
-                                '#1e3c72',  // On Time - blue
-                                '#27496d',  // Late - darker blue
-                                '#0f2027'   // Absent - near-black blue
+                                '#1e3c72',  
+                                '#27496d',  
+                                '#0f2027'   
                             ],
                             borderColor: "#1b1c3b",
                             borderWidth: 2
@@ -553,8 +563,9 @@
                         }
                     }
                 });
-            </script>      
-        
+            </script>       -->
+
+
         <section class="speciality">
             <div class="shape right"></div>
             <div class="container">
@@ -564,12 +575,12 @@
                             <h6 class="sub-heading"><span>Solutions</span></h6><br>
                             <h3 class="heading wow" data-splitting>Complete Solutions <br>
                             </h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, </p>
+                            <!-- <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, </p> -->
 
                         </div>
                     </div>
                     <div class="col-xl-3 col-md-6">
-                        <div class="speciality-box" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="speciality-box" data-aos="fade-up" data-aos-duration="2000" ,,,>
                             <div class="icon">
                                 <!-- Branding Icon -->
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
@@ -586,7 +597,7 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <h5 class="title">Branding</h5>
+                            <h5 class="title">Stack BI</h5>
                             <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
                             <h3 class="number">01</h3>
                         </div>
@@ -609,7 +620,7 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <h5 class="title">ERP Implementation
+                            <h5 class="title">Business Process Automation
                             </h5>
                             <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
                             <h3 class="number">02</h3>
@@ -647,7 +658,7 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <h5 class="title">Business Process Automation
+                            <h5 class="title">Branding
                             </h5>
                             <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
                             <h3 class="number">03</h3>
@@ -671,7 +682,7 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <h5 class="title">Stack BI
+                            <h5 class="title">ERP Implimentation
                             </h5>
                             <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
                             <h3 class="number">04</h3>
@@ -767,7 +778,7 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <h5 class="title">E Invoicing
+                            <h5 class="title">Visitor Management
                             </h5>
                             <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
                             <h3 class="number">07</h3>
@@ -800,7 +811,7 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <h5 class="title">Visitor Management
+                            <h5 class="title">E Invoicing
                             </h5>
                             <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
                             <h3 class="number">08</h3>
@@ -809,9 +820,9 @@
                 </div>
             </div>
         </section>
-     
 
-        <section class="project" >
+
+        <section class="project">
             <div class="shape right"></div>
             <div class="container">
                 <div class="row">
@@ -819,8 +830,8 @@
                         <div class="block-text center">
                             <h6 class="sub-heading"><span>Our
                                     Speciality</span></h6><br>
-                            <h3 class="heading wow" data-splitting>OUR
-                                COLLECTION</h3>
+                            <h3 class="heading wow" data-splitting>Our
+                                Collection</h3>
                         </div>
 
                         <div class="swiper project-swiper">
@@ -828,13 +839,12 @@
                                 <div class="swiper-slide">
                                     <div class="project-box">
                                         <div class="image">
-                                            <a href="nft.html">
+                                            <a href="#">
                                                 <img src="assets/images/layouts/collection1.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="content">
-                                            <a href="nft.html" class="h5
-    title">Business Intelligence Suite
+                                            <a href="#" class="h5 title">Business Intelligence Suite
 
                                             </a>
                                         </div>
@@ -843,13 +853,12 @@
                                 <div class="swiper-slide">
                                     <div class="project-box">
                                         <div class="image">
-                                            <a href="nft.html">
-                                                <img src="assets/images/layouts/collection2.jpg" alt="">
+                                            <a href="#">
+                                                <img src="assets/images/layouts/collectionnew1.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="content">
-                                            <a href="nft.html" class="h5
-    title">Enterprise Evolution
+                                            <a href="#" class="h5 title">Enterprise Evolution
 
                                             </a>
                                         </div>
@@ -858,13 +867,12 @@
                                 <div class="swiper-slide">
                                     <div class="project-box">
                                         <div class="image">
-                                            <a href="nft.html">
-                                                <img src="assets/images/layouts/collection3.jpg" alt="">
+                                            <a href="#">
+                                                <img src="assets/images/layouts/collectionnew2.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="content">
-                                            <a href="nft.html" class="h5
-    title">Operational Excellence Drive
+                                            <a href="#" class="h5 title">Operational Excellence Drive
 
                                             </a>
                                         </div>
@@ -873,13 +881,12 @@
                                 <div class="swiper-slide">
                                     <div class="project-box">
                                         <div class="image">
-                                            <a href="nft.html">
+                                            <a href="#">
                                                 <img src="assets/images/layouts/collection4.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="content">
-                                            <a href="nft.html" class="h5
-    title">Market Expansion Blueprint
+                                            <a href="#" class="h5 title">Market Expansion Blueprint
 
                                             </a>
                                         </div>
@@ -888,13 +895,12 @@
                                 <div class="swiper-slide">
                                     <div class="project-box">
                                         <div class="image">
-                                            <a href="nft.html">
-                                                <img src="assets/images/layouts/collection3.jpg" alt="">
+                                            <a href="#">
+                                                <img src="assets/images/layouts/collectionnew3.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="content">
-                                            <a href="nft.html" class="h5
-    title">Agile Transformation Project
+                                            <a href="#" class="h5 title">Agile Transformation Project
 
                                             </a>
                                         </div>
@@ -903,61 +909,19 @@
                                 <div class="swiper-slide">
                                     <div class="project-box">
                                         <div class="image">
-                                            <a href="nft.html">
-                                                <img src="assets/images/layouts/collection3.jpg" alt="">
+                                            <a href="#">
+                                                <img src="assets/images/layouts/collectionnew4.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="content">
-                                            <a href="nft.html" class="h5
-    title">Business Intelligence Suite
+                                            <a href="#" class="h5 title">Business Intelligence Suite
 
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="project-box">
-                                        <div class="image">
-                                            <a href="nft.html">
-                                                <img src="assets/images/layouts/collection3.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <a href="nft.html" class="h5
-    title">SBA Synergy Mode</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-box">
-                                        <div class="image">
-                                            <a href="nft.html">
-                                                <img src="assets/images/layouts/collection3.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <a href="nft.html" class="h5
-    title">Corporate Scalability Roadmap
-
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-box">
-                                        <div class="image">
-                                            <a href="nft.html">
-                                                <img src="assets/images/layouts/collection3.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="content">
-                                            <a href="nft.html" class="h5
-    title">NextGen Business Playbook
-
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                              
+                                
                             </div>
                             <div class="swiper-pagination"></div>
 
@@ -970,373 +934,380 @@
     7.00059L8.87598 1.50997C9.133 1.25293 9.133 0.837303 8.87598
     0.580281L8.48769 0.191991C8.23067 -0.0650311 7.81504 -0.0650311 7.558
     0.191991L1.11578 6.53574C0.864303 6.79278 0.864302 7.20841 1.1212
-    7.46543Z" fill="white"/>
+    7.46543Z" fill="white" />
                                 </svg>
                             </div>
 
                             <div class="swiper-button-next">
-                                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: scaleX(-1);">
-                                    <path d="M1.1212 7.46543L7.56346 13.8092C7.8205 14.0662 8.23613 14.0662 8.49317 13.8092L8.88144 13.4209C9.13848 13.1639 9.13848 12.7482 8.88144 12.4912L3.2869 7.00059L8.87598 1.50997C9.133 1.25293 9.133 0.837303 8.87598 0.580281L8.48769 0.191991C8.23067 -0.0650311 7.81504 -0.0650311 7.558 0.191991L1.11578 6.53574C0.864303 6.79278 0.864302 7.20841 1.1212 7.46543Z" fill="white"/>
+                                <svg width="10" height="15" viewBox="0 0 10 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" style="transform: scaleX(-1);">
+                                    <path
+                                        d="M1.1212 7.46543L7.56346 13.8092C7.8205 14.0662 8.23613 14.0662 8.49317 13.8092L8.88144 13.4209C9.13848 13.1639 9.13848 12.7482 8.88144 12.4912L3.2869 7.00059L8.87598 1.50997C9.133 1.25293 9.133 0.837303 8.87598 0.580281L8.48769 0.191991C8.23067 -0.0650311 7.81504 -0.0650311 7.558 0.191991L1.11578 6.53574C0.864303 6.79278 0.864302 7.20841 1.1212 7.46543Z"
+                                        fill="white" />
                                 </svg>
                             </div>
-                            
+
                         </div>
                     </div>
 
                 </div>
             </div>
-        </section>
-      
+        </section><br><br><br><br><br>
+
 
 
 
 
         <section class="testimonials">
-
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="testimonials__main">
-                            <div class="block-text center">
-                                <h6 class="sub-heading"><span>Testimonials</span></h6><br>
-                                <h3 class="heading wow" data-splitting>What People Say
-                                </h3>
-                            </div>
-
-                            <div class="swiper testimonials-swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="box-testimonial center">
-                                            <img src="assets/images/icon/quote.png" alt="">
-                                            <p class="text">“ Curabitur eu est feugiat quam feugiat tristique non vel
-                                                erat. Class aptent taciti sociosqu ad litora torquent per conubia
-                                                nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing elit. Quisque congue, nunc nec suscipit fringilla, augue
-                                                ligula eleifend velit. “</p>
-                                            <div class="info">
-                                                <img src="assets/images/layouts/avt-02.png" alt="">
-                                                <h5 class="name">Jacob Jones</h5>
-                                                <p>Chief Product Officer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="box-testimonial center">
-                                            <img src="assets/images/icon/quote.png" alt="">
-                                            <p class="text">“ Curabitur eu est feugiat quam feugiat tristique non vel
-                                                erat. Class aptent taciti sociosqu ad litora torquent per conubia
-                                                nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing elit. Quisque congue, nunc nec suscipit fringilla, augue
-                                                ligula eleifend velit. “</p>
-                                            <div class="info">
-                                                <img src="assets/images/layouts/avt-03.png" alt="">
-                                                <h5 class="name">Jacob Jones</h5>
-                                                <p>Chief Product Officer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="box-testimonial center">
-                                            <img src="assets/images/icon/quote.png" alt="">
-                                            <p class="text">“ Curabitur eu est feugiat quam feugiat tristique non vel
-                                                erat. Class aptent taciti sociosqu ad litora torquent per conubia
-                                                nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing elit. Quisque congue, nunc nec suscipit fringilla, augue
-                                                ligula eleifend velit. “</p>
-                                            <div class="info">
-                                                <img src="assets/images/layouts/avt-04.png" alt="">
-                                                <h5 class="name">Jacob Jones</h5>
-                                                <p>Chief Product Officer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
+              <div class="center">
+                <h6 class="sub-heading"><span>Testimonials</span></h6>
+                <h3 class="heading">What People Say</h3>
+              </div>
+        
+              <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="box-testimonial center">
+                      <svg class="quote-icon" viewBox="0 0 512 512">
+                        <path fill="#6c5ce7" d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
+                      </svg>
+                      <p class="text">" Curabitur eu est feugiat quam feugiat tristique non vel erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue, nunc nec suscipit fringilla, augue ligula eleifend velit. "</p>
+                      <div class="info">
+                        <svg class="avatar" viewBox="0 0 200 200">
+                          <circle cx="100" cy="100" r="100" fill="#f2f2f2" />
+                          <circle cx="100" cy="85" r="40" fill="#6c5ce7" />
+                          <ellipse cx="100" cy="170" rx="50" ry="40" fill="#6c5ce7" />
+                        </svg>
+                        <h5 class="name">Jacob Jones</h5>
+                        <p>Chief Product Officer</p>
+                      </div>
                     </div>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <div class="box-testimonial center">
+                      <svg class="quote-icon" viewBox="0 0 512 512">
+                        <path fill="#6c5ce7" d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
+                      </svg>
+                      <p class="text">" Curabitur eu est feugiat quam feugiat tristique non vel erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue, nunc nec suscipit fringilla, augue ligula eleifend velit. "</p>
+                      <div class="info">
+                        <svg class="avatar" viewBox="0 0 200 200">
+                          <circle cx="100" cy="100" r="100" fill="#f2f2f2" />
+                          <circle cx="100" cy="85" r="40" fill="#fd79a8" />
+                          <ellipse cx="100" cy="170" rx="50" ry="40" fill="#fd79a8" />
+                          <path d="M70 80 Q100 110 130 80" stroke="#333" stroke-width="3" fill="none" />
+                        </svg>
+                        <h5 class="name">Sarah Wilson</h5>
+                        <p>Marketing Director</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                    <div class="box-testimonial center">
+                      <svg class="quote-icon" viewBox="0 0 512 512">
+                        <path fill="#6c5ce7" d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path>
+                      </svg>
+                      <p class="text">" Curabitur eu est feugiat quam feugiat tristique non vel erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue, nunc nec suscipit fringilla, augue ligula eleifend velit. "</p>
+                      <div class="info">
+                        <svg class="avatar" viewBox="0 0 200 200">
+                          <circle cx="100" cy="100" r="100" fill="#f2f2f2" />
+                          <circle cx="100" cy="85" r="40" fill="#00b894" />
+                          <ellipse cx="100" cy="170" rx="50" ry="40" fill="#00b894" />
+                          <rect x="75" y="75" width="10" height="15" fill="#333" />
+                          <rect x="115" y="75" width="10" height="15" fill="#333" />
+                        </svg>
+                        <h5 class="name">Michael Chen</h5>
+                        <p>Lead Developer</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              
+              <!-- Simple navigation buttons for demonstration -->
+             
             </div>
-        </section>
+          </section><br><br><br>
+        
 
 
-       
 
-       
-            <style>
-                /* Base styles */
-                body {
-                    margin: 0;
-                    padding: 0;
-                   
-                    background-color: #060b28;
-                    /* Dark blue background to match site */
-                    color: #fff;
-                }
 
-                
-                /* Footer styles */
-                .footer {
-                    background-color: #060b28;
-                    position: relative;
-                    overflow: hidden;
-                    padding: 80px 0 40px;
-                }
+        <style>
+            /* Base styles */
+            body {
+                margin: 0;
+                padding: 0;
 
-                /* Shape for visual interest */
-                .footer .shape {
-                    position: absolute;
-                    top: -50px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    width: 100%;
-                    height: 100px;
-                    background-color: rgba(106, 90, 205, 0.1);
-                    border-radius: 50%;
-                    filter: blur(40px);
-                    z-index: 0;
-                }
+                background-color: #060b28;
+                /* Dark blue background to match site */
+                color: #fff;
+            }
 
-                .container {
-                    max-width: 1200px;
-                    margin: 0 auto;
-                    padding: 0 15px;
-                    position: relative;
-                    z-index: 1;
-                }
 
-                .row {
-                    display: flex;
-                    flex-wrap: wrap;
-                    margin: 0 -15px;
-                }
+            /* Footer styles */
+            .footer {
+                background-color: #060b28;
+                position: relative;
+                overflow: hidden;
+                padding: 80px 0 40px;
+            }
 
-                /* Footer sections */
+            /* Shape for visual interest */
+            .footer .shape {
+                position: absolute;
+                top: -50px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                height: 100px;
+                background-color: rgba(106, 90, 205, 0.1);
+                border-radius: 50%;
+                filter: blur(40px);
+                z-index: 0;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 15px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -15px;
+            }
+
+            /* Footer sections */
+            .footer-column {
+                flex: 1;
+                padding: 0 15px;
+                min-width: 250px;
+                margin-bottom: 30px;
+            }
+
+            .footer-column h4 {
+                color: #fff;
+                font-size: 18px;
+                margin-bottom: 20px;
+                position: relative;
+                padding-bottom: 10px;
+            }
+
+            .footer-column h4:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 40px;
+                height: 2px;
+                background: linear-gradient(90deg, #8065e0, #6366f1);
+            }
+
+            /* Logo styling */
+            .footer-logo {
+                margin-bottom: 20px;
+            }
+
+            .footer-logo img {
+                height: 50px;
+            }
+
+            /* Footer link lists */
+            .footer-links {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .footer-links li {
+                margin-bottom: 12px;
+            }
+
+            .footer-links a {
+                color: #b4b7c9;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                display: inline-block;
+            }
+
+            .footer-links a:hover {
+                color: #fff;
+                transform: translateX(5px);
+            }
+
+            /* Contact info */
+            .contact-info {
+                margin-bottom: 20px;
+            }
+
+            .contact-info p {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 15px;
+                color: #b4b7c9;
+            }
+
+            .contact-info i {
+                margin-right: 10px;
+                color: #6366f1;
+            }
+
+            /* Newsletter form */
+            .newsletter-form {
+                margin-top: 15px;
+            }
+
+            .form-group {
+                position: relative;
+                margin-bottom: 15px;
+            }
+
+            .form-control {
+                background-color: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 30px;
+                height: 46px;
+                padding: 0 20px;
+                width: 100%;
+                color: #fff;
+                transition: all 0.3s ease;
+            }
+
+            .form-control:focus {
+                background-color: rgba(255, 255, 255, 0.1);
+                border-color: rgba(255, 255, 255, 0.2);
+                outline: none;
+            }
+
+            .action-btn {
+                background: linear-gradient(90deg, #8065e0, #6366f1);
+                border: none;
+                border-radius: 30px;
+                color: #fff;
+                cursor: pointer;
+                font-weight: 600;
+                height: 46px;
+                padding: 0 30px;
+                transition: all 0.3s ease;
+            }
+
+            .action-btn:hover {
+                background: linear-gradient(90deg, #6366f1, #8065e0);
+                transform: translateY(-3px);
+                box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+            }
+
+            /* Footer bottom */
+            .footer-bottom {
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                margin-top: 30px;
+                padding-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .copyright {
+                color: #b4b7c9;
+                font-size: 14px;
+                margin: 10px 0;
+            }
+
+            /* Social media links */
+            .social-icons {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin: 10px 0;
+            }
+
+            .social-icons li {
+                margin-left: 15px;
+            }
+
+            .social-icons a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 36px;
+                height: 36px;
+                background-color: rgba(255, 255, 255, 0.05);
+                border-radius: 50%;
+                transition: all 0.3s ease;
+            }
+
+            .social-icons a:hover {
+                background-color: rgba(99, 102, 241, 0.8);
+                transform: translateY(-3px);
+            }
+
+            .social-icons svg {
+                width: 16px;
+                height: 16px;
+                fill: #fff;
+            }
+
+            /* Quick nav for bottom */
+            .footer-quick-links {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin: 10px 0;
+            }
+
+            .footer-quick-links li {
+                margin-right: 20px;
+            }
+
+            .footer-quick-links a {
+                color: #b4b7c9;
+                text-decoration: none;
+                font-size: 14px;
+                transition: all 0.3s ease;
+            }
+
+            .footer-quick-links a:hover {
+                color: #fff;
+            }
+
+            /* Responsive design */
+            @media (max-width: 768px) {
                 .footer-column {
-                    flex: 1;
-                    padding: 0 15px;
-                    min-width: 250px;
-                    margin-bottom: 30px;
+                    flex: 0 0 50%;
                 }
 
-                .footer-column h4 {
-                    color: #fff;
-                    font-size: 18px;
-                    margin-bottom: 20px;
-                    position: relative;
-                    padding-bottom: 10px;
-                }
-
-                .footer-column h4:after {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    width: 40px;
-                    height: 2px;
-                    background: linear-gradient(90deg, #8065e0, #6366f1);
-                }
-
-                /* Logo styling */
-                .footer-logo {
-                    margin-bottom: 20px;
-                }
-
-                .footer-logo img {
-                    height: 50px;
-                }
-
-                /* Footer link lists */
-                .footer-links {
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                }
-
-                .footer-links li {
-                    margin-bottom: 12px;
-                }
-
-                .footer-links a {
-                    color: #b4b7c9;
-                    text-decoration: none;
-                    transition: all 0.3s ease;
-                    display: inline-block;
-                }
-
-                .footer-links a:hover {
-                    color: #fff;
-                    transform: translateX(5px);
-                }
-
-                /* Contact info */
-                .contact-info {
-                    margin-bottom: 20px;
-                }
-
-                .contact-info p {
-                    display: flex;
-                    align-items: flex-start;
-                    margin-bottom: 15px;
-                    color: #b4b7c9;
-                }
-
-                .contact-info i {
-                    margin-right: 10px;
-                    color: #6366f1;
-                }
-
-                /* Newsletter form */
-                .newsletter-form {
-                    margin-top: 15px;
-                }
-
-                .form-group {
-                    position: relative;
-                    margin-bottom: 15px;
-                }
-
-                .form-control {
-                    background-color: rgba(255, 255, 255, 0.05);
-                    border: 1px solid rgba(255, 255, 255, 0.1);
-                    border-radius: 30px;
-                    height: 46px;
-                    padding: 0 20px;
-                    width: 100%;
-                    color: #fff;
-                    transition: all 0.3s ease;
-                }
-
-                .form-control:focus {
-                    background-color: rgba(255, 255, 255, 0.1);
-                    border-color: rgba(255, 255, 255, 0.2);
-                    outline: none;
-                }
-
-                .action-btn {
-                    background: linear-gradient(90deg, #8065e0, #6366f1);
-                    border: none;
-                    border-radius: 30px;
-                    color: #fff;
-                    cursor: pointer;
-                    font-weight: 600;
-                    height: 46px;
-                    padding: 0 30px;
-                    transition: all 0.3s ease;
-                }
-
-                .action-btn:hover {
-                    background: linear-gradient(90deg, #6366f1, #8065e0);
-                    transform: translateY(-3px);
-                    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
-                }
-
-                /* Footer bottom */
                 .footer-bottom {
-                    border-top: 1px solid rgba(255, 255, 255, 0.1);
-                    margin-top: 30px;
-                    padding-top: 30px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
+                    flex-direction: column;
+                    text-align: center;
                 }
 
-                .copyright {
-                    color: #b4b7c9;
-                    font-size: 14px;
-                    margin: 10px 0;
-                }
-
-                /* Social media links */
-                .social-icons {
-                    display: flex;
-                    list-style: none;
-                    padding: 0;
-                    margin: 10px 0;
-                }
-
-                .social-icons li {
-                    margin-left: 15px;
-                }
-
-                .social-icons a {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 36px;
-                    height: 36px;
-                    background-color: rgba(255, 255, 255, 0.05);
-                    border-radius: 50%;
-                    transition: all 0.3s ease;
-                }
-
-                .social-icons a:hover {
-                    background-color: rgba(99, 102, 241, 0.8);
-                    transform: translateY(-3px);
-                }
-
-                .social-icons svg {
-                    width: 16px;
-                    height: 16px;
-                    fill: #fff;
-                }
-
-                /* Quick nav for bottom */
+                .social-icons,
                 .footer-quick-links {
-                    display: flex;
-                    list-style: none;
-                    padding: 0;
-                    margin: 10px 0;
+                    justify-content: center;
                 }
 
-                .footer-quick-links li {
-                    margin-right: 20px;
+                .social-icons li:first-child {
+                    margin-left: 0;
                 }
+            }
 
-                .footer-quick-links a {
-                    color: #b4b7c9;
-                    text-decoration: none;
-                    font-size: 14px;
-                    transition: all 0.3s ease;
+            @media (max-width: 576px) {
+                .footer-column {
+                    flex: 0 0 100%;
                 }
-
-                .footer-quick-links a:hover {
-                    color: #fff;
-                }
-
-                /* Responsive design */
-                @media (max-width: 768px) {
-                    .footer-column {
-                        flex: 0 0 50%;
-                    }
-
-                    .footer-bottom {
-                        flex-direction: column;
-                        text-align: center;
-                    }
-
-                    .social-icons,
-                    .footer-quick-links {
-                        justify-content: center;
-                    }
-
-                    .social-icons li:first-child {
-                        margin-left: 0;
-                    }
-                }
-
-                @media (max-width: 576px) {
-                    .footer-column {
-                        flex: 0 0 100%;
-                    }
-                }
-            </style>
+            }
+        </style>
         </head>
 
-        
+        </style>
+
         <footer class="footer">
             <div class="shape"></div>
             <div class="container">
@@ -1346,8 +1317,8 @@
                         <!-- <div class="footer-logo">
                         <img src="assets/images/logo/logo.png" alt="SBA Logo">
                     </div> -->
-                        <h6>Powered By <B style="font-size:
-    40px;">Stack</B></h3><br>
+                    <h6 class="powered-text">Powered by <b class="stack-text">STACK</b></h6> <br>
+
                             <p>SBA Business Analytics provides cutting-edge cloud services, monitoring solutions,
                                 and business intelligence tools to help your business thrive in today's digital
                                 landscape.</p> <br>
@@ -1358,7 +1329,7 @@
                                 <p><i class="fa-solid fa-envelope"></i> business@sbarabia.com</p>
                             </div>
                     </div>
-    
+
                     <!-- Services Column -->
                     <div class="footer-column">
                         <h4>Our Solutions</h4>
@@ -1371,7 +1342,7 @@
                             <li><a href="#">Business Intelligence</a></li>
                         </ul>
                     </div>
-    
+
                     <!-- Quick Links Column -->
                     <div class="footer-column">
                         <h4>Quick Links</h4>
@@ -1384,13 +1355,13 @@
                             <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
-    
+
                     <!-- Newsletter Column -->
                     <div class="footer-column">
                         <h4>Newsletter</h4>
                         <p>Subscribe to our newsletter to receive latest updates, industry insights, and exclusive
                             offers.</p>
-    
+
                         <form action="#" class="newsletter-form">
                             <div class="form-group">
                                 <input type="email" class="form-control" placeholder="Your email address">
@@ -1401,21 +1372,21 @@
                         </form>
                     </div>
                 </div>
-    
+
                 <!-- Footer Bottom Section -->
                 <div class="footer-bottom">
                     <div class="copyright">
                         Copyright © 2025, Bloombiz Creatives | SBA Business Analytics. All rights reserved.
                     </div>
-    
+
                     <ul class="footer-quick-links">
                         <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="terms.html">Terms of Service</a></li>
                         <li><a href="security.html">Security</a></li>
                     </ul>
-    
+
                     <ul class="social-icons">
-                        <li>
+                        <!-- <li>
                             <a href="#">
                                 <svg viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -1423,17 +1394,18 @@
                                         fill="white" />
                                 </svg>
                             </a>
-                        </li>
+                        </li> -->
                         <li>
-                            <a href="#">
-                                <svg viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 1200 1227" xmlns="http://www.w3.org/2000/svg" fill="white" width="20"
+                                    height="20">
                                     <path
-                                        d="M14.5 1.42062C13.9794 1.66154 13.4246 1.82123 12.8462 1.89877C13.4412 1.524 13.8954 0.935077 14.1089 0.225231C13.5541 0.574154 12.9416 0.820615 12.2889 0.958154C11.7621 0.366462 11.0114 0 10.1924 0C8.60337 0 7.32412 1.36062 7.32412 3.02862C7.32412 3.26862 7.34338 3.49938 7.39062 3.71908C5.0045 3.59631 2.89313 2.38985 1.47475 0.552C1.22712 1.00523 1.08188 1.524 1.08188 2.08246C1.08188 3.13108 1.59375 4.06062 2.35675 4.59877C1.89562 4.58954 1.44325 4.44831 1.06 4.22585C1.06 4.23508 1.06 4.24708 1.06 4.25908C1.06 5.73046 2.05487 6.95262 3.3595 7.23415C3.12587 7.30154 2.87125 7.33385 2.607 7.33385C2.42325 7.33385 2.23775 7.32277 2.06362 7.28215C2.4355 8.48123 3.49075 9.36277 4.7455 9.39138C3.769 10.1972 2.52912 10.6828 1.18688 10.6828C0.9515 10.6828 0.72575 10.6717 0.5 10.6412C1.77137 11.5062 3.27813 12 4.903 12C10.1845 12 13.072 7.38462 13.072 3.384C13.072 3.25015 13.0676 3.12092 13.0615 2.99262C13.6311 2.56615 14.1097 2.03354 14.5 1.42062Z"
-                                        fill="white" />
+                                        d="M714.963 545.162L1177.28 0H1070.98L672.133 484.184L350.866 0H0L490.089 714.848L0 1227H106.295L535.063 706.747L875.072 1227H1200L714.963 545.162ZM583.349 633.397L544.436 577.205L140.977 89.3447H305.738L615.445 546.991L654.358 603.183L1069.15 1136.41H905.388L583.349 633.397Z" />
                                 </svg>
                             </a>
                         </li>
-                        <li>
+
+                        <!-- <li>
                             <a href="#">
                                 <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -1445,8 +1417,8 @@
                                         fill="white" />
                                 </svg>
                             </a>
-                        </li>
-                        <li>
+                        </li> -->
+                        <!-- <li>
                             <a href="#">
                                 <svg viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -1454,7 +1426,7 @@
                                         fill="white" />
                                 </svg>
                             </a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
@@ -1467,34 +1439,34 @@
                     </ul>
                 </div>
             </div>
+            </div>
         </footer>
-    
-    
+
         <a id="scroll-top"><span class="icon-arrow-top"></span></a>
-    
-        </div>
-        
-        
-    
-    
-    
-        <script src="app/js/jquery.min.js"></script>
-        <script src="app/js/jquery.easing.js"></script>
-        <script src="app/js/plugins.js"></script>
-        <script src="app/js/countto.js"></script>
-    
-        <script src="app/js/app.js"></script>
-        <script src="app/js/count-down.js"></script>
-    
-        <script src="app/js/aos.js"></script>
-    
-    
-          <script src="app/js/swiper-bundle.min.js"></script>
-          <script src="app/js/swiper.js"></script>
-    
-        <!-- Initialize Swiper -->
-    
-    
-    </body>
-    
-    </html>
+
+    </div>
+
+
+
+
+
+    <script src="app/js/jquery.min.js"></script>
+    <script src="app/js/jquery.easing.js"></script>
+    <script src="app/js/plugins.js"></script>
+    <script src="app/js/countto.js"></script>
+
+    <script src="app/js/app.js"></script>
+    <script src="app/js/count-down.js"></script>
+
+    <script src="app/js/aos.js"></script>
+
+
+    <script src="app/js/swiper-bundle.min.js"></script>
+    <script src="app/js/swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+
+
+</body>
+
+</html>
