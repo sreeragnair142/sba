@@ -310,10 +310,10 @@
         });
     });
 
-    var arlo_tm_animate_text = function() {
-        var animateSpan = jQuery(".arlo_tm_animation_text_word");
-        animateSpan.typed({ strings: ["Purpose", "Technolgy", "Business"], loop: true, startDelay: 1e3, backDelay: 2e3 });
-    }
+    // var arlo_tm_animate_text = function() {
+    //     var animateSpan = jQuery(".arlo_tm_animation_text_word");
+    //     animateSpan.typed({ strings: ["Purpose", "Technolgy", "Business"], loop: true, startDelay: 1e3, backDelay: 2e3 });
+    // }
 
     var arlo_tm_about_animation = function() {
         if ($(".parallax").length > 0) {
