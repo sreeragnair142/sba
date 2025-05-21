@@ -13,86 +13,140 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 
-
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="app/dist/aos.css">
     <link rel="stylesheet" href="app/dist/app.css">
     <!-- end Styles -->
 
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/images/logo/logofav - Copy.png">
     <link rel="apple-touch-icon-precomposed" href="assets/images/logo/favicon.png">
 
-<style>
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
+    <style>
+        /* Mobile menu dropdown icon styles */
+        .mobile-menu-dropdown {
+            position: relative;
         }
         
-        .wise-section {
-            padding: 4rem 2rem;
-            background-color: #260e45;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-            text-align: center;
+        .mobile-menu-dropdown .dropdown-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 12px;
+            transition: transform 0.3s ease;
         }
         
-        .section-title {
-            font-size: 2.5rem;
-            color: #2c3e50;
-            margin-bottom: 2rem;
-            font-weight: 700;
+        .mobile-menu-dropdown.active .dropdown-icon {
+            transform: translateY(-50%) rotate(180deg);
         }
         
-        .section-content {
-            max-width: 900px;
-            margin: 0 auto;
-            font-size: 1.15rem;
-            line-height: 1.7;
+        /* Mobile dropdown submenu styles */
+        .mobile-submenu {
+            display: none;
+            padding-left: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
         }
         
-        .highlight {
-            color: #3498db;
-            font-weight: 700;
+        .mobile-submenu.active {
+            display: block;
+            max-height: 500px; /* Adjust as needed */
         }
         
-        .product-names {
-            font-weight: 700;
-            color: #2c3e50;
+        .mobile-submenu li {
+            padding: 10px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .section-title {
-                font-size: 2rem;
-            }
-            
-            .section-content {
-                font-size: 1.05rem;
-            }
-            
-            .wise-section {
-                padding: 3rem 1.5rem;
-            }
+        .mobile-submenu li:last-child {
+            border-bottom: none;
         }
-        
-        @media (max-width: 480px) {
-            .section-title {
-                font-size: 1.8rem;
-            }
-            
-            .section-content {
-                font-size: 1rem;
-            }
-            
-            .wise-section {
-                padding: 2rem 1rem;
-            }
-        }
-    </style>
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.wise-section {
+  padding: 3rem 2rem;
+  background-color: #0d0828;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #212529;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.highlight {
+  /* color: #212529; */
+  position: relative;
+}
+
+.highlight:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -8px;
+  left: 0;
+  background-color: #4dabf7;
+}
+
+.section-content {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #495057;
+}
+
+.product-names {
+  font-weight: 500;
+  color: #4dabf7;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .section-content {
+    font-size: 1rem;
+  }
+  
+  .wise-section {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .section-content {
+    font-size: 0.95rem;
+  }
+  
+  .wise-section {
+    padding: 2rem 1rem;
+  }
+}
+
+
+    </style>
 </head>
 
 <body class="home-main header-fixed">
@@ -119,13 +173,13 @@
                                 </a>
                             </div>
 
+
                             <div class="header__right">
                                 <nav id="main-nav" class="main-nav">
                                     <ul id="menu-primary-menu" class="menu">
 
                                         <li class="">
                                             <a href="index.html">Home</a>
-
                                         </li>
 
                                         <li class="menu-item">
@@ -136,28 +190,20 @@
                                         <li class="menu-item menu-item-has-children">
                                             <a href="#">Solutions</a>
                                             <ul class="sub-menu">
-                                                <li class="menu-item"><a href="blog-details.html">Branding</a></li>
-                                                <li class="menu-item"><a href="blog-details.html">ERP Implementation</a>
-                                                </li>
-                                                <li class="menu-item"><a href="blog-details.html">Business Process
-                                                        Automation</a></li>
-
-                                                <li class="menu-item"><a href="blog-details.html">Stack BI</a></li>
-                                                <li class="menu-item"><a href="blog-details.html">Cloude Service
-                                                        Monitoring</a></li>
-                                                <li class="menu-item"><a href="blog-details.html">Server Monitoring</a>
-                                                </li>
-                                                <li class="menu-item"><a href="blog-details.html">E Invoicing</a></li>
-                                                <li class="menu-item"><a href="blog-details.htmla">Visitor Mnagement</a>
-                                                </li>
-
+                                                <li class="menu-item"><a href="stack-bi.html">Stack BI</a></li>
+                                                <li class="menu-item"><a href="cloud_monitoring.html">Cloud Service Monitoring</a></li>
+                                                <li class="menu-item"><a href="visitor_management.html">Visitor Management</a></li>
+                                                <li class="menu-item"><a href="e_invoicing.html">E Invoicing</a></li>
+                                                <li class="menu-item"><a href="monitoring.html">Server Monitoring</a></li>
+                                                <li class="menu-item"><a href="business-process.html">Business Process Automation</a></li>
+                                                <li class="menu-item"><a href="devops.html">Devoaps Automation</a></li>
+                                                <li class="menu-item"><a href="erp.html">ERP Implimentation</a></li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="#">Clients</a>
 
+                                        <li class="">
+                                            <a href="vision-mission.html">Clients</a>
                                         </li>
-
                                         <li class="menu-item">
                                             <a href="contact.html">Contact</a>
                                         </li>
@@ -167,7 +213,6 @@
                             </div>
 
                             <div class="header__action">
-
                                 <a href="contact.html" class=""><span></span></a>
                             </div>
                         </div>
@@ -178,36 +223,24 @@
         <!-- end Header -->
         <!-- Pagetitle -->
         <section class="page-title">
-            <div class="shape"></div>
-            <div class="shape right s3"></div>
+            <div class="page-title__overlay"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="page-title__body">
-                            <div class="page-title__main blog-details">
-                                <h4 class="title" style="font-weight: 500;">Visitor Management </h4>
-
-                                <ul class="breacrumb">
-                                    <li style="margin-bottom: 25px;"><a href="index.html">Home</a></li>
-                                    <li style="margin-bottom: 25px;"><a href="#">Solutions</a></li>
-
-                                    <li style="margin-bottom: 25px;"><a href="#a">Visitor Management </a></li>
-
+                        <div class="page-title__container">
+                            <h1 class="page-title__heading">Visitor Management</h1>
+                            <nav class="page-title__breadcrumb">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb__item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb__item"><a href="solutions.html">Solutions</a></li>
+                                    <li class="breadcrumb__item breadcrumb__item--active">Visitor Management</li>
                                 </ul>
-                                <div class="bottom">
-                                    <p>Share this page</p>
-
-                                    <ul class="list-social">
-                                        <!-- Social media icons here -->
-                                    </ul>
-                                </div>
-                            </div>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <!-- Pagetitle -->
 
         <!-- BLog -->
@@ -216,7 +249,7 @@
                 <div class="row">
                     <div class="bloglist__main">
                         <div class="list details">
-                            <h4 class="title">Let’s MeetUp with WiseVisits & WiseMeetings</h4>
+                            <h4 class="title" style="font-size: 45px;">Let’s MeetUp with WiseVisits & WiseMeetings</h4>
 
                             <div class="line"></div>
 
@@ -241,26 +274,35 @@
                             </section>
 
 
-                            <section class="branding-section">
-                                <!-- Style 3: Overlapping Content -->
-                                <div class="overlapping-content">
-                                    <div class="overlap-box">
-                                        <h3 style="font-size: 37px;">WiseVisits: The Smart Visitor Management System
-                                        </h3><br>
-                                        <h6>Simplify Visitor Flow, Elevate First Impressions</h6>
-                                        <div class="divider"></div>
-                                        <p>
-                                            WiseVisits transforms how you welcome, track, and manage guests across all
-                                            your office locations. Say goodbye to manual registers and long
-                                            queues—WiseVisits offers an intuitive, digital experience for secure and
-                                            efficient visitor management.
-                                        </p>
+                            <section class="branding-section wisevisits-section">
+                                <div class="container">
+                                    <div class="wisevisits-content">
+                                        <div class="wisevisits-text">
+                                            <span class="section-subtitle">SMART VISITOR MANAGEMENT</span>
+                                            <h2 class="section-title" style="color: #ced4da; font-weight: 100;" >WiseVisits: The Smart
+                                                Visitor Management System
+                                            </h2>
+                                            <p class="section-description">
+                                                Simplify Visitor Flow, Elevate First Impressions
+                                            </p>
+                                            <div class="divider"></div>
+                                            <p class="section-body">
+                                                WiseVisits transforms how you welcome, track, and manage guests across
+                                                all
+                                                your office locations. Say goodbye to manual registers and long
+                                                queues—WiseVisits offers an intuitive, digital experience for secure and
+                                                efficient visitor management.
+                                            </p>
+                                            <button class="cta-button">Learn More</button>
+                                        </div>
+                                        <div class="wisevisits-image">
+                                            <img src="assets/images/layouts/aboutnew1.jpg"
+                                                alt="WiseVisits Visitor Management System">
+                                            <div class="image-overlay"></div>
+                                        </div>
                                     </div>
-                                    <img src="assets/images/layouts/aboutlatest2.jpg" alt="Data Center"
-                                        class="overlap-image">
                                 </div>
                             </section>
-
 
                             <section class="roadmap">
                                 <img src="assets/images/background/line.png" alt="" class="img-line">
@@ -376,24 +418,47 @@
                             </section>
 
 
-                            <section class="branding-section">
-                                <!-- Style 3: Overlapping Content -->
-                                <div class="overlapping-content">
-                                    <div class="overlap-box">
-                                        <h3 style="font-size: 37px;">WiseMeetings: The Intelligent Meeting Room
-                                            Management Solution</h3>
+                            <section class="wisemeetings-section">
+                                <div class="wisemeetings-container">
 
-                                        <h5>Smart Scheduling. Efficient Meetings. Optimized Spaces.</h5>
-                                        <div class="divider"></div>
-                                        <p>
-                                            WiseMeetings is your all-in-one solution to schedule, organize, and manage
-                                            meetings across multiple rooms and locations. Designed with productivity and
-                                            ease-of-use in mind, WiseMeetings ensures your team stays focused on what
-                                            matters most—your business goals.
-                                        </p>
+
+                                    <div class="wisemeetings-content">
+                                        <div class="wisemeetings-info">
+                                            <h2 class="wisemeetings-title" style="color: #ced4da; font-weight: 100;">WiseMeetings: The
+                                                Intelligent Meeting Room Management Solution</h2>
+
+                                            <div class="wisemeetings-features">
+                                                <div class="feature-item">
+                                                    <div class="feature-icon">✓</div>
+                                                    <span style="color:#ced4da;">Smart Scheduling</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <div class="feature-icon">✓</div>
+                                                    <span style="color:#ced4da ;">Efficient Meetings</span>
+                                                </div>
+                                                <div class="feature-item">
+                                                    <div class="feature-icon">✓</div>
+                                                    <span style="color: #ced4da;">Optimized Spaces</span>
+                                                </div>
+                                            </div>
+
+                                            <p class="wisemeetings-description" style="color: #fff;">
+                                                WiseMeetings is your all-in-one solution to schedule, organize, and
+                                                manage
+                                                meetings across multiple rooms and locations. Designed with productivity
+                                                and
+                                                ease-of-use in mind, WiseMeetings ensures your team stays focused on
+                                                what
+                                                matters most—your business goals.
+                                            </p>
+                                        </div>
+
+                                        <!-- This will only display on desktop -->
+                                        <div class="wisemeetings-visual">
+                                            <img src="assets/images/layouts/aboutlatest1.jpg"
+                                                alt="WiseMeetings Interface" class="main-image">
+                                        </div>
                                     </div>
-                                    <img src="assets/images/layouts/aboutlatest2.jpg" alt="Data Center"
-                                        class="overlap-image">
                                 </div>
                             </section>
 
@@ -417,35 +482,44 @@
                                                 <div class="roadmap-box">
                                                     <div class="content">
                                                         <h5 class="title">Centralized Meeting Management</h5>
-                                                        <p class="text">Schedule and manage meetings from one platform—remote or on-premises, across locations.</p>
+                                                        <p class="text">Schedule and manage meetings from one
+                                                            platform—remote or on-premises, across locations.</p>
                                                     </div>
                                                 </div>
 
                                                 <div class="roadmap-box right">
                                                     <div class="content">
                                                         <h5 class="title"> Smart Digital Signage</h5>
-                                                        <p class="text">Interactive touchscreen tablets outside meeting rooms show real-time availability and allow instant bookings or room releases.</p>
+                                                        <p class="text">Interactive touchscreen tablets outside meeting
+                                                            rooms show real-time availability and allow instant bookings
+                                                            or room releases.</p>
                                                     </div>
                                                 </div>
 
                                                 <div class="roadmap-box">
                                                     <div class="content">
                                                         <h5 class="title">Real-Time Analytics</h5>
-                                                        <p class="text">Track room occupancy, no-show rates, peak usage times, and overall space utilization with actionable reports.</p>
+                                                        <p class="text">Track room occupancy, no-show rates, peak usage
+                                                            times, and overall space utilization with actionable
+                                                            reports.</p>
                                                     </div>
                                                 </div>
 
                                                 <div class="roadmap-box right">
                                                     <div class="content">
                                                         <h5 class="title">Microsoft Outlook Integration</h5>
-                                                        <p class="text">Automatically sync meeting schedules with your Outlook calendar, preventing conflicts and reducing scheduling errors. </p>
+                                                        <p class="text">Automatically sync meeting schedules with your
+                                                            Outlook calendar, preventing conflicts and reducing
+                                                            scheduling errors. </p>
                                                     </div>
                                                 </div>
 
                                                 <div class="roadmap-box">
                                                     <div class="content">
                                                         <h5 class="title">AI-Powered Optimization</h5>
-                                                        <p class="text">Automatically assign rooms based on usage patterns, avoid overlapping, and minimize downtime between meetings.
+                                                        <p class="text">Automatically assign rooms based on usage
+                                                            patterns, avoid overlapping, and minimize downtime between
+                                                            meetings.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -453,14 +527,18 @@
                                                 <div class="roadmap-box right">
                                                     <div class="content">
                                                         <h5 class="title">Mobile Access for Employees</h5>
-                                                        <p class="text">Book, extend, end, or cancel meeting room reservations on the go using the mobile app—empowering flexible workplace operations.</p>
+                                                        <p class="text">Book, extend, end, or cancel meeting room
+                                                            reservations on the go using the mobile app—empowering
+                                                            flexible workplace operations.</p>
                                                     </div>
                                                 </div>
 
                                                 <div class="roadmap-box">
                                                     <div class="content">
                                                         <h5 class="title">Brand Promotion Opportunities</h5>
-                                                        <p class="text">Use idle screen time on digital signage to display brand videos or promotional content when the room is free.</p>
+                                                        <p class="text">Use idle screen time on digital signage to
+                                                            display brand videos or promotional content when the room is
+                                                            free.</p>
                                                     </div>
                                                 </div>
 
@@ -476,13 +554,16 @@
 
                                                 <div class="roadmap-box">
                                                     <div class="content">
-                                                        <h5 class="title">For Admins: Full Control at Your Fingertips</h5>
-                                                        
+                                                        <h5 class="title">For Admins: Full Control at Your Fingertips
+                                                        </h5>
 
-                                                        <li> 	Automate meeting room scheduling</li>
-                                                        <li> 	Avoid no-shows and extended meetings with automated reminders</li>
-                                                        <li> 	Monitor room usage in real-time</li>
-                                                        <li> 	Access reports on top defaulters, busiest rooms, and underused spaces</li>
+
+                                                        <li> Automate meeting room scheduling</li>
+                                                        <li> Avoid no-shows and extended meetings with automated
+                                                            reminders</li>
+                                                        <li> Monitor room usage in real-time</li>
+                                                        <li> Access reports on top defaulters, busiest rooms, and
+                                                            underused spaces</li>
                                                     </div>
                                                 </div>
 
@@ -504,8 +585,10 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="block-text center">
-                                                <h6 class="sub-heading"><span>Why Choose WiseVisits & WiseMeetings?</span></h6><br>
-                                                <h3 class="heading wow" data-splitting>Unified Platform. Powerful Tools. Reliable Support.</h3>
+                                                <h6 class="sub-heading"><span>Why Choose WiseVisits &
+                                                        WiseMeetings?</span></h6><br>
+                                                <h3 class="heading wow" data-splitting>Unified Platform. Powerful Tools.
+                                                    Reliable Support.</h3>
                                             </div>
 
                                             <div class="branding-grid" data-aos="fade-up" data-aos-duration="2000">
@@ -519,8 +602,9 @@
                                                                 fill="#4fc3f7" />
                                                         </svg>
                                                     </div> -->
-                                                    <h4>	Easy Setup & Deployment</h4>
-                                                    <p>Web and mobile-ready with one-touch tablet configuration at reception.</p>
+                                                    <h4> Easy Setup & Deployment</h4>
+                                                    <p>Web and mobile-ready with one-touch tablet configuration at
+                                                        reception.</p>
                                                 </div>
 
                                                 <!-- Service Card 2 -->
@@ -533,8 +617,9 @@
                                                                 fill="#4fc3f7" />
                                                         </svg>
                                                     </div> -->
-                                                    <h4>	Multi-Location & Role-Based Access</h4>
-                                                    <p>Manage operations across different offices with centralized control. </p>
+                                                    <h4> Multi-Location & Role-Based Access</h4>
+                                                    <p>Manage operations across different offices with centralized
+                                                        control. </p>
                                                 </div>
 
                                                 <!-- Service Card 3 -->
@@ -547,8 +632,9 @@
                                                                 fill="#4fc3f7" />
                                                         </svg>
                                                     </div> -->
-                                                    <h4>	Customizable Workflows</h4>
-                                                    <p>Tailor check-in experiences or meeting room rules to your organizational needs.</p>
+                                                    <h4> Customizable Workflows</h4>
+                                                    <p>Tailor check-in experiences or meeting room rules to your
+                                                        organizational needs.</p>
                                                 </div>
 
                                                 <!-- Service Card 4 -->
@@ -561,8 +647,9 @@
                                                                 fill="#4fc3f7" />
                                                         </svg>
                                                     </div> -->
-                                                    <h4>	Dedicated Support</h4>
-                                                    <p>With a customer-first approach and a dedicated account manager, our team is always ready to help. </p>
+                                                    <h4> Dedicated Support</h4>
+                                                    <p>With a customer-first approach and a dedicated account manager,
+                                                        our team is always ready to help. </p>
                                                 </div>
 
 
@@ -575,13 +662,14 @@
                                                                 fill="#4fc3f7" />
                                                         </svg>
                                                     </div> -->
-                                                    <h4>	Secure & Scalable</h4>
-                                                    <p>Built with enterprise-grade security and ready to scale with your business. </p>
+                                                    <h4> Secure & Scalable</h4>
+                                                    <p>Built with enterprise-grade security and ready to scale with your
+                                                        business. </p>
                                                 </div>
 
 
 
-                                               
+
 
                                             </div>
 
@@ -595,36 +683,42 @@
 
 
 
-                             <div class="container">
-        <section class="wise-section">
-            <h2 class="section-title"><span class="highlight">Make the Wise Choice Today</span></h2>
-            
-            <div class="section-content">
-                <p>Whether you're managing hundreds of daily visitors or dozens of meeting rooms, <span class="product-names">WiseVisits</span> and <span class="product-names">WiseMeetings</span> offer a smarter way to run your workplace. Create efficient workflows, ensure compliance, and leave a lasting impression—digitally.</p>
-            </div>
-        </section>
+                           
+<div class="container">
+  <section class="wise-section">
+    <h2 class="section-title">
+      <span class="highlight" style="color: #ced4da;">Simplify Your Workplace</span>
+    </h2>
+    <div class="section-content">
+      <p>
+        Streamline operations. Enhance experiences. Transform your space with 
+        <span class="product-names">WiseVisits</span> and
+        <span class="product-names">WiseMeetings</span>. Digital solutions for the modern workplace.
+      </p>
     </div>
+  </section>
+</div>
 
-                            <section class="enterprise-section">
-                                <div>
-                                    <p class="enterprise-text">
-                                        For businesses ready to go beyond the basics.<br />
-                                        <strong>business@sbarabia.com /+966 543387670</strong>
-                                    </p>
-                                </div>
-                                <div>
-                                    <a href="contact.html" class="enterprise-button">Let's Connected With Us &nbsp;
-                                        ›</a>
-                                </div>
-                            </section>
+                                <section class="enterprise-section">
+                                    <div>
+                                        <p class="enterprise-text">
+                                            For businesses ready to go beyond the basics.<br />
+                                            <strong>business@sbarabia.com /+966 543387670</strong>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <a href="contact.html" class="enterprise-button">Let's Connected With Us &nbsp;
+                                            ›</a>
+                                    </div>
+                                </section>
 
 
 
 
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
         <!-- end BLog -->
 
@@ -658,12 +752,17 @@
                     <div class="footer-column">
                         <h4>Our Solutions</h4>
                         <ul class="footer-links">
-                            <li><a href="#">Cloud Service Monitoring</a></li>
-                            <li><a href="#">Server Monitoring</a></li>
-                            <li><a href="#">E-Invoicing Solutions</a></li>
-                            <li><a href="#">Visitor Management</a></li>
-                            <li><a href="#">Data Analytics</a></li>
-                            <li><a href="#">Business Intelligence</a></li>
+                            <li><a href="stack-bi.html">Stack BI</a></li>
+                            <li><a href="cloud_monitoring.html">Cloud Service Monitoring</a></li>
+                            <li><a href="visitor_management.html">Visitor Management</a></li>
+                            <li><a href="e_invoicing.html">E Invoicing</a></li>
+                            <li><a href="monitoring.html">Server Monitoring</a></li>
+                            <li><a href="business-process.html">Business Process Automation</a></li>
+                            <li><a href="devops.html">Devoaps Automation</a></li>
+                            <li><a href="erp.html">ERP Implimentation</a></li>
+
+
+
                         </ul>
                     </div>
 
@@ -672,11 +771,11 @@
                         <h4>Quick Links</h4>
                         <ul class="footer-links">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Clients</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="#">Solutions</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="about.html">Solutions</a></li>
+                            <li><a href="#">Client</a></li>
                             <!-- <li><a href="career.html">Careers</a></li> -->
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="contact.html">Contact </a></li>
                         </ul>
                     </div>
 
@@ -738,8 +837,83 @@
     </footer>
 
 
-    <a id="scroll-top"><span class="icon-arrow-top"></span></a>
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+    <span class="arrow-up"></span>
+  </button>
 
+
+
+  <style>
+     .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    
+    .scroll-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .scroll-top-btn:hover {
+      background-color: #0056b3;
+      transform: translateY(-3px);
+    }
+    
+    /* Icon styles */
+    .arrow-up {
+      width: 12px;
+      height: 12px;
+      border-top: 3px solid white;
+      border-left: 3px solid white;
+      transform: rotate(45deg);
+      margin-top: 5px;
+    }
+  </style>
+    </div>
+
+
+ <script>
+    // Get the button
+    const scrollButton = document.getElementById('scrollTopBtn');
+    
+    // Show button when user scrolls down 300px from the top
+    window.addEventListener('scroll', function() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollButton.classList.add('visible');
+      } else {
+        scrollButton.classList.remove('visible');
+      }
+    });
+    
+    // Scroll to top when button is clicked
+    scrollButton.addEventListener('click', function() {
+      // For smooth scrolling:
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      
+      // Alternative method without smooth scrolling:
+      // document.body.scrollTop = 0; // For Safari
+      // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
+  </script>
     </div>
 
 

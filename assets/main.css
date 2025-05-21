@@ -1,4 +1,4 @@
-/* Base Styles */
+Base Styles
 :root {
   --primary-color: #000000;
   --background-color: #0d0a15;
@@ -98,7 +98,6 @@ nav a:hover {
 }
 
 nav li.active a:after {
-  content: '';
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -458,4 +457,5 @@ main {
   }
 
 
+  
   

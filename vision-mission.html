@@ -1,314 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bennet | Creative Agency</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBA</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="app/dist/aos.css">
+    <link rel="stylesheet" href="app/dist/app.css">
+    <!-- end Styles -->
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="assets/images/logo/logofav - Copy.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/logo/favicon.png">
+
+
 </head>
-<body>
-   <headerr>
-    <div class="container">
-      <div class="header-content">
-        <div class="logo">
-          <a href="#">
-            <img src="assets/images/logo/logosb.png" alt="Bennet">
-          </a>
-        </div>
-        <nav class="desktop-nav">
-          <ul>
-            <li><a href="#" style="color: rgb(234, 229, 229);" class="active">Home</a></li>
-            <li><a href="#" style="color: rgb(234, 229, 229);">About us</a></li>
-            <li><a href="#" style="color: rgb(234, 229, 229);">Solutions</a></li>
-            <li><a href="#" style="color: rgb(234, 229, 229);">Clients</a></li>
-            <li><a href="#" style="color: rgb(234, 229, 229);">Contact us</a></li>
-          </ul>
-        </nav>
-        <div class="cta-button">
-        </div>
-        <div class="mobile-menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
-  </headerr>
 
- <div class="mobile-menu">
-  <nav>
-    <ul>
-      <li><a href="#" style="color: rgb(225, 217, 217);" class="active">Home</a></li>
-      <li><a href="#" style="color: rgb(223, 218, 218);">About us</a></li>
-      
-      
-      <li><a href="#" style="color: rgb(212, 204, 204);">Clients</a></li>
-      <li><a href="#" style="color: rgb(222, 214, 214);">Contact us</a></li>
-    </ul>
-  </nav>
-</div>
+<body class="home-main header-fixed">
 
+    <div class="wrapper page-details">
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <!-- Original 4 images with reduced size -->
-          <div class="image-container top-left">
-            <img src="assets/images/layouts/total.jpeg" alt="Creative design">
-          </div>
-          <div class="image-container top-right">
-            <img src="assets/images/layouts/spc.jpeg" alt="Product design">
-          </div>
-          <div class="image-container bottom-left">
-            <img src="assets/images/layouts/als.jpeg" alt="Web design">
-          </div>
-          <div class="image-container bottom-right">
-            <img src="assets/images/layouts/awj.jpeg" alt="Interior design">
-          </div>
-          
-          <!-- Two additional images -->
-          <div class="image-container middle-left">
-            <img src="assets/images/layouts/kapsarc.jpeg" alt="Digital marketing">
-          </div>
-          <div class="image-container middle-right">
-            <img src="assets/images/layouts/kaust.jpeg" alt="Brand strategy">
-          </div>
-
-          
-
-          <div class="hero-text">
-            <span class="welcome">Welcome</span>
-            <img src="assets/images/logo/stackfooternew.png" alt="Stack Logo" class="main-logo" />
-            <span class="established">SBA</span>
-          </div>
+        <div class="preloader">
+            <div class="clear-loading loading-effect-2">
+                <span></span>
+            </div>
         </div>
 
-        <div class="tagline" style="color: rgb(234, 229, 229);">
-          <h2>Bringing brands to life through creative Business</h2>
-        </div>
-      </div>
-    </section>
+        <!-- Header -->
+        <header id="header_main" class="header">
+            <div class="container big">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header__body">
+                            <div class="header__logo">
+                                <a href="index.html">
+                                    <img id="site-logo" src="assets/images/logo/logosb.png" alt="Peson" width="120"
+                                        height="45" data-retina="assets/images/logo/logo@2x.png" data-width="120"
+                                        data-height="38">
+                                </a>
+                            </div>
 
-    <section class="scroll-indicator">
-      <div class="container">
-        <!-- <div class="scroll-text">
+
+                            <div class="header__right">
+                                <nav id="main-nav" class="main-nav">
+                                    <ul id="menu-primary-menu" class="menu">
+
+                                        <li class="">
+                                            <a href="index.html">Home</a>
+
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="about.html">About</a>
+                                        </li>
+
+
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="#">Solutions</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="stack-bi.html">Stack BI</a></li>
+
+                                                <li class="menu-item"><a href="cloud_monitoring.html">Cloud Service
+                                                        Monitoring
+                                                    </a></li>
+
+                                                <li class="menu-item"><a href="visitor_management.html">Visitor
+                                                        Management</a>
+                                                </li>
+
+                                                <li class="menu-item"><a href="e_invoicing.html">E Invoicing</a>
+                                                </li>
+
+                                                <li class="menu-item"><a href="monitoring.html">Server Monitoring</a>
+                                                </li>
+                                                <li class="menu-item"><a href="business-process.html">Business Process
+                                                        Automation</a>
+                                                </li>
+                                                <li class="menu-item"><a href="devops.html">Devoaps
+                                                        Automation</a></li>
+
+                                                <li class="menu-item"><a href="erp.html">ERP Implimentation</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+
+                                        <li class="">
+                                            <a href="vision-mission.html">Clients</a>
+                                            <!-- <ul class="sub-menu">
+                                            <li class="menu-item"><a href="nft.html">NFTs</a></li>
+                                            <li class="menu-item"><a href="blog.html">Blog List</a></li>
+                                            <li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
+                                            
+                                            <li class="menu-item"><a href="vision-mission.html">Visions & Mission</a></li>
+                                            <li class="menu-item"><a href="help-center.html">Help Center</a></li>
+                                            <li class="menu-item"><a href="parti-asset.html">Participants & Assets</a></li>
+                                            <li class="menu-item"><a href="advisor.html">Advisors & Backers</a></li>
+                                            <li class="menu-item"><a href="partner.html">Partners & Investors</a></li>
+
+                                           </ul> -->
+                                        </li>
+                                        <!-- <li class="menu-item">
+                                        <a href="roadmap.html">RoadMap</a>
+                                    </li> -->
+                                        <!-- <li class="menu-item">
+                                        <a href="team.html">Team</a>
+                                    </li> -->
+                                        <li class="menu-item">
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="mobile-button"><span></span></div>
+                            </div>
+
+                            <div class="header__action">
+                                <!-- <a href="#" class="search-btn">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="9.7659" cy="9.76639" r="8.98856" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.0176 16.4849L19.5416 19.9997" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                    
+                            </a> -->
+                                <a href="contact.html" class=""><span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end Header -->
+        <!-- Pagetitle -->
+        <main>
+            <section class="heroo">
+                <div class="container">
+                    <div class="heroo-content">
+                        <!-- Original 4 images with reduced size -->
+
+                        
+                        <div class="image-container top-left">
+                            <img src="assets/images/layouts/total.jpeg" alt="Creative design">
+                        </div>
+                        <div class="image-container top-right">
+                            <img src="assets/images/layouts/spc.jpeg" alt="Product design">
+                        </div>
+                        <div class="image-container bottom-left">
+                            <img src="assets/images/layouts/als.jpeg" alt="Web design">
+                        </div>
+                        <div class="image-container bottom-right">
+                            <img src="assets/images/layouts/awj.jpeg" alt="Interior design">
+                        </div>
+
+
+                        
+                        
+
+                        <!-- Two additional images -->
+                        <div class="image-container middle-left">
+                            <img src="assets/images/layouts/kapsarc.jpeg" alt="Digital marketing">
+                        </div>
+                        <div class="image-container middle-right">
+                            <img src="assets/images/layouts/kaust.jpeg" alt="Brand strategy">
+                        </div>
+
+                        <div class="hero-text">
+                            <span class="welcome">Welcome</span>
+                            <img src="assets/images/logo/stackfooternew.png" alt="Stack Logo" class="main-logo" />
+                            <span class="established">SBA</span>
+                        </div>
+                    </div>
+
+                    <div class="tagline" style="color: rgb(234, 229, 229);">
+                        <h2>Bringing brands to life through creative Business</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section class="scroll-indicator">
+                <div class="container">
+                    <!-- <div class="scroll-text">
           <i class="fas fa-arrow-down"></i>
           <span>Scroll to Explore</span>
         </div> -->
-      </div>
-    </section>
-  </main>
+                </div>
+            </section>
+        </main>
 
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-column company-info">
-          <div class="footer-logo">
-            <img src="assets/images/logo/logosb.png" alt="Bennet">
-          </div>
-          <p>SBA Business Analytics provides cutting-edge cloud services, monitoring solutions,
+
+        <footer class="footer">
+            <div class="shape"></div>
+            <div class="container">
+                <div class="row">
+                    <!-- Company Info Column -->
+                    <div class="footer-column">
+
+                        <h6 class="powered-text" style="display: flex; align-items: center; gap: 5px;">
+                            Powered by
+                            <img src="assets/images/logo/stackfooternew.png" alt="STACK Logo" style="height: 50px;">
+                        </h6> <br>
+
+                        <p style="font-size: 15px;">SBA Business Analytics provides cutting-edge cloud services,
+                            monitoring solutions,
                             and business intelligence tools to help your business thrive in today's digital
-                            landscape.</p>
-          <div class="company-address">
-            <p><i class="fas fa-map-marker-alt"></i> #2, Al Yassmen Building, Zaid Ibn Thabit Street,
-                                Riyadh, Saudi Arabia</p>
-            <p><i class="fas fa-phone"></i> +966 543387670</p>
-            <p><i class="fas fa-envelope"></i> business@sbarabia.com</p>
-          </div>
-        </div>
+                            landscape.</p> <br>
+                        <div class="contact-info">
+                            <p style="font-size: 15px;"><i class="fa-solid fa-location-dot"></i> #2, Al Yassmen
+                                Building, Zaid Ibn Thabit Street, Riyadh, Saudi Arabia
+                            </p>
+                            <p style="font-size: 15px;"><i class="fa-solid fa-phone"></i> +966 543387670</p>
+                            <p style="font-size: 15px;"><i class="fa-solid fa-envelope"></i> business@sbarabia.com</p>
+                        </div>
+                    </div>
 
-        <div class="footer-column our-services">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Cloud Service Monitoring</a></li>
-            <li><a href="#">Server Monitoring</a></li>
-            <li><a href="#">E-Invoicing Solutions</a></li>
-            <li><a href="#">Visitor Management</a></li>
-            <li><a href="#">Data Analytics</a></li>
-            <li><a href="#">Business Intelligence</a></li>
-          </ul>
-        </div>
+                    <!-- Services Column -->
+                    <div class="footer-column">
+                        <h4>Our Solutions</h4>
+                        <ul class="footer-links">
+                            <li><a href="stack-bi.html">Stack BI</a></li>
+                            <li><a href="cloud_monitoring.html">Cloud Service Monitoring</a></li>
+                            <li><a href="visitor_management.html">Visitor Management</a></li>
+                            <li><a href="e_invoicing.html">E Invoicing</a></li>
+                            <li><a href="monitoring.html">Server Monitoring</a></li>
+                            <li><a href="business-process.html">Business Process Automation</a></li>
+                            <li><a href="devops.html">Devoaps Automation</a></li>
+                            <li><a href="erp.html">ERP Implimentation</a></li>
 
-        <div class="footer-column quick-links">
-          <h4>Quick Links</h4>
-          <ul>
-             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Clients</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="#">Solutions</a></li>
+
+
+                        </ul>
+                    </div>
+
+                    <!-- Quick Links Column -->
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="about.html">Solutions</a></li>
+                            <li><a href="#">Client</a></li>
                             <!-- <li><a href="career.html">Careers</a></li> -->
-                            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
+                            <li><a href="contact.html">Contact </a></li>
+                        </ul>
+                    </div>
+                    <!-- Newsletter Column -->
+                    <div class="footer-column">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to our newsletter to receive latest updates, industry insights, and exclusive
+                            offers.</p>
 
-        <div class="footer-column newsletter">
-          <h4>Newsletter</h4>
-          <p>Subscribe to our newsletter to receive the latest updates, industry insights, and exclusive offers.</p>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Your email address">
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-      </div>
+                        <form action="#" class="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your email address">
+                            </div>
+                            <button type="submit" class="action-btn">
+                                <span>Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
 
-      <div class="footer-bottom">
-        <div class="copyright">
-          <p> Copyright © 2025, Bloombiz Creatives | SBA Business Analytics. All rights reserved.</p>
-        </div>
-        <div class="legal-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Security</a>
-        </div>
-        <div class="social-links">
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
+                <!-- Footer Bottom Section -->
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        Copyright © 2025, Bloombiz Creatives | SBA Business Analytics. All rights reserved.
+                    </div>
+
+                    <ul class="footer-quick-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="security.html">Security</a></li>
+                    </ul>
+
+                    <ul class="social-icons">
+
+                        <li>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 1200 1227" xmlns="http://www.w3.org/2000/svg" fill="white" width="20"
+                                    height="20">
+                                    <path
+                                        d="M714.963 545.162L1177.28 0H1070.98L672.133 484.184L350.866 0H0L490.089 714.848L0 1227H106.295L535.063 706.747L875.072 1227H1200L714.963 545.162ZM583.349 633.397L544.436 577.205L140.977 89.3447H305.738L615.445 546.991L654.358 603.183L1069.15 1136.41H905.388L583.349 633.397Z" />
+                                </svg>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="white">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </div>
-  </footer>
+    </footer>
 
 
-  <script>
-    // Mobile menu toggle functionality
-document.addEventListener('DOMContentLoaded', function() {
-  const menuToggle = document.querySelector('.mobile-menu-toggle');
-  const mobileMenu = document.querySelector('.mobile-menu');
-  
-  menuToggle.addEventListener('click', function() {
-    mobileMenu.classList.toggle('active');
-    // Toggle hamburger to X
-    const spans = menuToggle.querySelectorAll('span');
-    spans.forEach(span => span.classList.toggle('active'));
-  });
-  
-  // Close mobile menu when clicking on a link
-  const mobileLinks = document.querySelectorAll('.mobile-menu a');
-  mobileLinks.forEach(link => {
-    link.addEventListener('click', function() {
-      mobileMenu.classList.remove('active');
-      const spans = menuToggle.querySelectorAll('span');
-      spans.forEach(span => span.classList.remove('active'));
-    });
-  });
-  
-  // Images hover effects and animations
-  const images = document.querySelectorAll('.image-container');
-  
-  // Ensure images appear with animation
-  images.forEach((img, index) => {
-    // Set initial opacity to 0
-    img.style.opacity = '0';
-    
-    // Staggered animation
-    setTimeout(() => {
-      img.style.opacity = '0.8';
-    }, 300 * index);
-  });
-  
-  // Add image interaction animations
-  document.querySelectorAll('.image-container').forEach(container => {
-    container.addEventListener('mouseenter', function() {
-      this.style.zIndex = '5';
-    });
-    
-    container.addEventListener('mouseleave', function() {
-      setTimeout(() => {
-        this.style.zIndex = '1';
-      }, 300);
-    });
-  });
-  
-  // Add responsive header behavior
-  const header = document.querySelector('header');
-  let lastScrollTop = 0;
-  
-  window.addEventListener('scroll', function() {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-    if (scrollTop > lastScrollTop) {
-      // Scrolling down
-      header.style.transform = 'translateY(-100%)';
-    } else {
-      // Scrolling up
-      header.style.transform = 'translateY(0)';
-    }
-    
-    // Add shadow when scrolled
-    if (scrollTop > 50) {
-      header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
-    } else {
-      header.style.boxShadow = 'none';
-    }
-    
-    lastScrollTop = scrollTop;
-  });
-  
-  // Make sure everything is responsive at load and resize
-  function checkResponsiveness() {
-    const windowWidth = window.innerWidth;
-    
-    // Adjust image visibility on very small screens
-    if (windowWidth < 480) {
-      const middleImages = document.querySelectorAll('.middle-left, .middle-right');
-      middleImages.forEach(img => {
-        img.style.opacity = '0.5';
-      });
-    } else {
-      const allImages = document.querySelectorAll('.image-container');
-      allImages.forEach(img => {
-        img.style.opacity = '0.8';
-      });
-    }
-  }
-  
-  // Run on load and resize
-  checkResponsiveness();
-  window.addEventListener('resize', checkResponsiveness);
-});
+    <a id="scroll-top"><i class="fas fa-arrow-up"></i></a>
+
+    </div>
 
 
 
 
-  document.addEventListener('DOMContentLoaded', function() {
-      const menuToggle = document.querySelector('.mobile-menu-toggle');
-      const mobileMenu = document.querySelector('.mobile-menu');
-      
-      menuToggle.addEventListener('click', function() {
-        mobileMenu.classList.toggle('active');
-        // Toggle hamburger to X
-        const spans = menuToggle.querySelectorAll('span');
-        spans.forEach(span => span.classList.toggle('active'));
-      });
-      
-      // Close mobile menu when clicking on a link
-      const mobileLinks = document.querySelectorAll('.mobile-menu a');
-      mobileLinks.forEach(link => {
-        link.addEventListener('click', function() {
-          mobileMenu.classList.remove('active');
-          const spans = menuToggle.querySelectorAll('span');
-          spans.forEach(span => span.classList.remove('active'));
-        });
-      });
-    });
-    
+
+    <script src="app/js/jquery.min.js"></script>
+    <script src="app/js/jquery.easing.js"></script>
+    <script src="app/js/plugins.js"></script>
+    <script src="app/js/countto.js"></script>
+
+    <script src="app/js/app.js"></script>
+    <script src="app/js/count-down.js"></script>
+
+    <script src="app/js/aos.js"></script>
 
 
- document.addEventListener("DOMContentLoaded", function () {
-    const dropdownToggle = document.querySelector(".dropdown-toggle");
-    const dropdownMenu = document.querySelector(".dropdown-menu");
+    <script src="app/js/swiper-bundle.min.js"></script>
+    <script src="app/js/swiper.js"></script>
 
-    dropdownToggle.addEventListener("click", function (e) {
-      e.preventDefault();
-      dropdownMenu.classList.toggle("hidden");
-    });
-  });
+    <!-- Initialize Swiper -->
 
-    
-  </script>
-  <script src="app/js/script.js"></script>
+
 </body>
+
 </html>

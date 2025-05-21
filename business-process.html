@@ -13,18 +13,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 
-
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="app/dist/aos.css">
     <link rel="stylesheet" href="app/dist/app.css">
     <!-- end Styles -->
 
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/images/logo/logofav - Copy.png">
     <link rel="apple-touch-icon-precomposed" href="assets/images/logo/favicon.png">
 
-
+    <style>
+        /* Mobile menu dropdown icon styles */
+        .mobile-menu-dropdown {
+            position: relative;
+        }
+        
+        .mobile-menu-dropdown .dropdown-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 12px;
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu-dropdown.active .dropdown-icon {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        
+        /* Mobile dropdown submenu styles */
+        .mobile-submenu {
+            display: none;
+            padding-left: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .mobile-submenu.active {
+            display: block;
+            max-height: 500px; /* Adjust as needed */
+        }
+        
+        .mobile-submenu li {
+            padding: 10px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .mobile-submenu li:last-child {
+            border-bottom: none;
+        }
+    </style>
 </head>
 
 <body class="home-main header-fixed">
@@ -51,13 +95,13 @@
                                 </a>
                             </div>
 
+
                             <div class="header__right">
                                 <nav id="main-nav" class="main-nav">
                                     <ul id="menu-primary-menu" class="menu">
 
                                         <li class="">
                                             <a href="index.html">Home</a>
-
                                         </li>
 
                                         <li class="menu-item">
@@ -68,28 +112,20 @@
                                         <li class="menu-item menu-item-has-children">
                                             <a href="#">Solutions</a>
                                             <ul class="sub-menu">
-                                                <li class="menu-item"><a href="blog-details.html">Branding</a></li>
-                                                <li class="menu-item"><a href="blog-details.html">ERP Implementation</a>
-                                                </li>
-                                                <li class="menu-item"><a href="blog-details.html">Business Process
-                                                        Automation</a></li>
-
-                                                <li class="menu-item"><a href="blog-details.html">Stack BI</a></li>
-                                                <li class="menu-item"><a href="blog-details.html">Cloude Service
-                                                        Monitoring</a></li>
-                                                <li class="menu-item"><a href="blog-details.html">Server Monitoring</a>
-                                                </li>
-                                                <li class="menu-item"><a href="blog-details.html">E Invoicing</a></li>
-                                                <li class="menu-item"><a href="blog-details.htmla">Visitor Mnagement</a>
-                                                </li>
-
+                                                <li class="menu-item"><a href="stack-bi.html">Stack BI</a></li>
+                                                <li class="menu-item"><a href="cloud_monitoring.html">Cloud Service Monitoring</a></li>
+                                                <li class="menu-item"><a href="visitor_management.html">Visitor Management</a></li>
+                                                <li class="menu-item"><a href="e_invoicing.html">E Invoicing</a></li>
+                                                <li class="menu-item"><a href="monitoring.html">Server Monitoring</a></li>
+                                                <li class="menu-item"><a href="business-process.html">Business Process Automation</a></li>
+                                                <li class="menu-item"><a href="devops.html">Devoaps Automation</a></li>
+                                                <li class="menu-item"><a href="erp.html">ERP Implimentation</a></li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item menu-item-has-children">
-                                            <a href="#">Clients</a>
 
+                                        <li class="">
+                                            <a href="vision-mission.html">Clients</a>
                                         </li>
-
                                         <li class="menu-item">
                                             <a href="contact.html">Contact</a>
                                         </li>
@@ -99,7 +135,6 @@
                             </div>
 
                             <div class="header__action">
-
                                 <a href="contact.html" class=""><span></span></a>
                             </div>
                         </div>
@@ -110,30 +145,19 @@
         <!-- end Header -->
         <!-- Pagetitle -->
         <section class="page-title">
-            <div class="shape"></div>
-            <div class="shape right s3"></div>
+            <div class="page-title__overlay"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="page-title__body">
-                            <div class="page-title__main blog-details">
-                                <h4 class="title" style="font-weight: 500;">Business Process Automation </h4>
-
-                                <ul class="breacrumb">
-                                    <li style="margin-bottom: 25px;"><a href="index.html">Home</a></li>
-                                    <li style="margin-bottom: 25px;"><a href="#">Solutions</a></li>
-
-                                    <li style="margin-bottom: 25px;"><a href="#a">Business Process Automation </a></li>
-
+                        <div class="page-title__container">
+                            <h1 class="page-title__heading">Business Process Automation</h1>
+                            <nav class="page-title__breadcrumb">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb__item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb__item"><a href="solutions.html">Solutions</a></li>
+                                    <li class="breadcrumb__item breadcrumb__item--active">Business Process Automation</li>
                                 </ul>
-                                <div class="bottom">
-                                    <p>Share this page</p>
-
-                                    <ul class="list-social">
-                                        <!-- Social media icons here -->
-                                    </ul>
-                                </div>
-                            </div>
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -148,7 +172,7 @@
                 <div class="row">
                     <div class="bloglist__main">
                         <div class="list details">
-                            <h4 class="title">Streamline Success with Business Process Automation.</h4>
+                            <h4 class="title" style="font-size: 45px;">Streamline Success with Business Process Automation.</h4>
 
                             <div class="line"></div>
 
@@ -351,31 +375,36 @@
 
 
 
-                              <section class="solutions-container">
-        <div class="container">
-            <div class="solutions-header">
-                <h2>Our BPA Solutions</h2>
-            </div>
-            <div class="solutions-content">
-                <div class="solutions-text">
-                    <p>We offer customized automation solutions tailored to your specific business needs. Our approach includes a thorough process analysis, identification of improvement areas, and building automation workflows that align with your business goals.</p>
-                    <a href="#contact" class="cta-button">Talk to an Expert</a>
-                </div>
-                <div class="solutions-list">
-                    <ul>
-                        <li>Robotic Process Automation (RPA)</li>
-                        <li>Artificial Intelligence and Machine Learning integration</li>
-                        <li>Workflow orchestration tools</li>
-                        <li>API-based systems integration</li>
-                        <li>Low-code and no-code platforms</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <svg class="solutions-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="0.1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,213.3C672,224,768,224,864,202.7C960,181,1056,139,1152,138.7C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
-    </section>
+                            <section class="solutions-container">
+                                <div class="container">
+                                    <div class="solutions-header">
+                                        <h2>Our BPA Solutions</h2>
+                                    </div>
+                                    <div class="solutions-content">
+                                        <div class="solutions-text">
+                                            <p>We offer customized automation solutions tailored to your specific
+                                                business needs. Our approach includes a thorough process analysis,
+                                                identification of improvement areas, and building automation workflows
+                                                that align with your business goals.</p>
+                                            <a href="#contact" class="cta-button">Talk to an Expert</a>
+                                        </div>
+                                        <div class="solutions-list">
+                                            <ul>
+                                                <li>Robotic Process Automation (RPA)</li>
+                                                <li>Artificial Intelligence and Machine Learning integration</li>
+                                                <li>Workflow orchestration tools</li>
+                                                <li>API-based systems integration</li>
+                                                <li>Low-code and no-code platforms</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <svg class="solutions-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                    <path fill="#ffffff" fill-opacity="0.1"
+                                        d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,213.3C672,224,768,224,864,202.7C960,181,1056,139,1152,138.7C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                                    </path>
+                                </svg>
+                            </section>
 
                             <section class="enterprise-section">
                                 <div>
@@ -430,12 +459,17 @@
                     <div class="footer-column">
                         <h4>Our Solutions</h4>
                         <ul class="footer-links">
-                            <li><a href="#">Cloud Service Monitoring</a></li>
-                            <li><a href="#">Server Monitoring</a></li>
-                            <li><a href="#">E-Invoicing Solutions</a></li>
-                            <li><a href="#">Visitor Management</a></li>
-                            <li><a href="#">Data Analytics</a></li>
-                            <li><a href="#">Business Intelligence</a></li>
+                            <li><a href="stack-bi.html">Stack BI</a></li>
+                            <li><a href="cloud_monitoring.html">Cloud Service Monitoring</a></li>
+                            <li><a href="visitor_management.html">Visitor Management</a></li>
+                            <li><a href="e_invoicing.html">E Invoicing</a></li>
+                            <li><a href="monitoring.html">Server Monitoring</a></li>
+                            <li><a href="business-process.html">Business Process Automation</a></li>
+                             <li><a href="devops.html">Devoaps Automation</a></li>
+                             <li><a href="erp.html">ERP Implimentation</a></li>
+
+                             
+
                         </ul>
                     </div>
 
@@ -444,14 +478,13 @@
                         <h4>Quick Links</h4>
                         <ul class="footer-links">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Clients</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="#">Solutions</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="about.html">Solutions</a></li>
+                            <li><a href="#">Client</a></li>
                             <!-- <li><a href="career.html">Careers</a></li> -->
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="contact.html">Contact </a></li>
                         </ul>
                     </div>
-
                     <!-- Newsletter Column -->
                     <div class="footer-column">
                         <h4>Newsletter</h4>
@@ -510,8 +543,83 @@
     </footer>
 
 
-    <a id="scroll-top"><span class="icon-arrow-top"></span></a>
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+    <span class="arrow-up"></span>
+  </button>
 
+
+
+  <style>
+     .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    
+    .scroll-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .scroll-top-btn:hover {
+      background-color: #0056b3;
+      transform: translateY(-3px);
+    }
+    
+    /* Icon styles */
+    .arrow-up {
+      width: 12px;
+      height: 12px;
+      border-top: 3px solid white;
+      border-left: 3px solid white;
+      transform: rotate(45deg);
+      margin-top: 5px;
+    }
+  </style>
+    </div>
+
+
+ <script>
+    // Get the button
+    const scrollButton = document.getElementById('scrollTopBtn');
+    
+    // Show button when user scrolls down 300px from the top
+    window.addEventListener('scroll', function() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollButton.classList.add('visible');
+      } else {
+        scrollButton.classList.remove('visible');
+      }
+    });
+    
+    // Scroll to top when button is clicked
+    scrollButton.addEventListener('click', function() {
+      // For smooth scrolling:
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      
+      // Alternative method without smooth scrolling:
+      // document.body.scrollTop = 0; // For Safari
+      // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
+  </script>
     </div>
 
 
