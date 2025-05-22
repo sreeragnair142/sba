@@ -13,18 +13,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 
-
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="app/dist/aos.css">
     <link rel="stylesheet" href="app/dist/app.css">
     <!-- end Styles -->
 
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/images/logo/logofav - Copy.png">
     <link rel="apple-touch-icon-precomposed" href="assets/images/logo/favicon.png">
 
+    <style>
+      
+        /* Mobile menu dropdown icon styles */
+        .mobile-menu-dropdown {
+            position: relative;
+        }
 
+        .mobile-menu-dropdown .dropdown-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-menu-dropdown.active .dropdown-icon {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        /* Mobile dropdown submenu styles */
+        .mobile-submenu {
+            display: none;
+            padding-left: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .mobile-submenu.active {
+            display: block;
+            max-height: 500px;
+            /* Adjust as needed */
+        }
+
+        .mobile-submenu li {
+            padding: 10px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .mobile-submenu li:last-child {
+            border-bottom: none;
+        }
+    </style>
 </head>
 
 <body class="home-main header-fixed">
@@ -58,7 +104,6 @@
 
                                         <li class="">
                                             <a href="index.html">Home</a>
-
                                         </li>
 
                                         <li class="menu-item">
@@ -70,53 +115,23 @@
                                             <a href="#">Solutions</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item"><a href="stack-bi.html">Stack BI</a></li>
-
                                                 <li class="menu-item"><a href="cloud_monitoring.html">Cloud Service
-                                                        Monitoring
-                                                    </a></li>
-
+                                                        Monitoring</a></li>
                                                 <li class="menu-item"><a href="visitor_management.html">Visitor
-                                                        Management</a>
-                                                </li>
-
-                                                <li class="menu-item"><a href="e_invoicing.html">E Invoicing</a>
-                                                </li>
-
+                                                        Management</a></li>
+                                                <li class="menu-item"><a href="e_invoicing.html">E Invoicing</a></li>
                                                 <li class="menu-item"><a href="monitoring.html">Server Monitoring</a>
                                                 </li>
                                                 <li class="menu-item"><a href="business-process.html">Business Process
-                                                        Automation</a>
-                                                </li>
-                                                <li class="menu-item"><a href="devops.html">Devoaps
                                                         Automation</a></li>
-
-                                                <li class="menu-item"><a href="erp.html">ERP Implimentation</a>
-                                                </li>
-
+                                                <li class="menu-item"><a href="devops.html">Devoaps Automation</a></li>
+                                                <li class="menu-item"><a href="erp.html">ERP Implimentation</a></li>
                                             </ul>
                                         </li>
 
                                         <li class="">
                                             <a href="vision-mission.html">Clients</a>
-                                            <!-- <ul class="sub-menu">
-                                            <li class="menu-item"><a href="nft.html">NFTs</a></li>
-                                            <li class="menu-item"><a href="blog.html">Blog List</a></li>
-                                            <li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
-                                            
-                                            <li class="menu-item"><a href="vision-mission.html">Visions & Mission</a></li>
-                                            <li class="menu-item"><a href="help-center.html">Help Center</a></li>
-                                            <li class="menu-item"><a href="parti-asset.html">Participants & Assets</a></li>
-                                            <li class="menu-item"><a href="advisor.html">Advisors & Backers</a></li>
-                                            <li class="menu-item"><a href="partner.html">Partners & Investors</a></li>
-
-                                           </ul> -->
                                         </li>
-                                        <!-- <li class="menu-item">
-                                        <a href="roadmap.html">RoadMap</a>
-                                    </li> -->
-                                        <!-- <li class="menu-item">
-                                        <a href="team.html">Team</a>
-                                    </li> -->
                                         <li class="menu-item">
                                             <a href="contact.html">Contact</a>
                                         </li>
@@ -126,12 +141,6 @@
                             </div>
 
                             <div class="header__action">
-                                <!-- <a href="#" class="search-btn">
-                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="9.7659" cy="9.76639" r="8.98856" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M16.0176 16.4849L19.5416 19.9997" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>                                    
-                            </a> -->
                                 <a href="contact.html" class=""><span></span></a>
                             </div>
                         </div>
@@ -149,16 +158,16 @@
 
                         
                         <div class="image-container top-left">
-                            <img src="assets/images/layouts/total.jpeg" alt="Creative design">
+                            <img src="assets/images/layouts/blue1.png" alt="Creative design">
                         </div>
                         <div class="image-container top-right">
-                            <img src="assets/images/layouts/spc.jpeg" alt="Product design">
+                            <img src="assets/images/layouts/blue2.png" alt="Product design">
                         </div>
                         <div class="image-container bottom-left">
-                            <img src="assets/images/layouts/als.jpeg" alt="Web design">
+                            <img src="assets/images/layouts/blue3.png" alt="Web design">
                         </div>
                         <div class="image-container bottom-right">
-                            <img src="assets/images/layouts/awj.jpeg" alt="Interior design">
+                            <img src="assets/images/layouts/blue4.png" alt="Interior design">
                         </div>
 
 
@@ -167,21 +176,22 @@
 
                         <!-- Two additional images -->
                         <div class="image-container middle-left">
-                            <img src="assets/images/layouts/kapsarc.jpeg" alt="Digital marketing">
+                            <img src="assets/images/layouts/blue5.png" alt="Digital marketing">
                         </div>
                         <div class="image-container middle-right">
-                            <img src="assets/images/layouts/kaust.jpeg" alt="Brand strategy">
+                            <img src="assets/images/layouts/blue6.png" alt="Brand strategy">
                         </div>
 
                         <div class="hero-text">
                             <span class="welcome">Welcome</span>
-                            <img src="assets/images/logo/stackfooternew.png" alt="Stack Logo" class="main-logo" />
-                            <span class="established">SBA</span>
+                            <!-- <img src="assets/images/logo/stackfooternew.png" alt="Stack Logo" class="main-logo" /> -->
+                             <h2>Clients</h2>
+                            <span class="established">Driving success with our clients.</span>
                         </div>
                     </div>
 
                     <div class="tagline" style="color: rgb(234, 229, 229);">
-                        <h2>Bringing brands to life through creative Business</h2>
+                            <img src="assets/images/layouts/blue7.png" alt="Stack Logo" class="main-logo" />
                     </div>
                 </div>
             </section>
