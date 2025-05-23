@@ -8765,7 +8765,7 @@ background: linear-gradient(90deg, rgb(9 8 33) 16%, rgb(10 10 45) 57%, rgba(4, 3
         }
 
         .hero-content strong {
-            font-weight: 700;
+            /* font-weight: 700; */
             color: #4ee1a0;
         }
 
@@ -8864,7 +8864,7 @@ background: linear-gradient(90deg, rgb(9 8 33) 16%, rgb(10 10 45) 57%, rgba(4, 3
         .tagline {
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
-            font-weight: 600;
+            /* font-weight: 600; */
             color: var(--accent);
             text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
         }
