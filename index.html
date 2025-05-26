@@ -140,6 +140,16 @@
         </header>
         <!-- end Header -->
 
+
+         <div class="floating-contact-icons">
+            <a href="https://wa.me/966543387680" target="_blank" class="contact-icon whatsapp-icon" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:+966543387680" class="contact-icon phone-icon" title="Call Us">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+
         <!-- Banner -->
         <section class="banner s4">
             <div class="shape right"></div>
@@ -1540,7 +1550,56 @@
     </div>
 
 
+    
+ <script>
+        // Get the button
+        const scrollButton = document.getElementById('scrollTopBtn');
 
+        // Show button when user scrolls down 300px from the top
+        window.addEventListener('scroll', function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollButton.classList.add('visible');
+            } else {
+                scrollButton.classList.remove('visible');
+            }
+        });
+
+        // Scroll to top when button is clicked
+        scrollButton.addEventListener('click', function () {
+            // For smooth scrolling:
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+
+            // Alternative method without smooth scrolling:
+            // document.body.scrollTop = 0; // For Safari
+            // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        });
+    </script>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            // Show or hide the scroll top button
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#scroll-top').addClass('show');
+                } else {
+                    $('#scroll-top').removeClass('show');
+                }
+            });
+
+            // Scroll to top when button is clicked
+            $('#scroll-top').click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        });
+    </script>
 
 
     <script src="app/js/jquery.min.js"></script>

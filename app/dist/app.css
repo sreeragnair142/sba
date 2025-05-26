@@ -1490,7 +1490,7 @@ a {
 }
 
 #scroll-top.show {
-  right: 15px;
+  right: 20px;
   opacity: 1;
   visibility: visible;
 }
@@ -9804,3 +9804,158 @@ background: linear-gradient(135deg, #070b2f 0%, #080d33 25%, #090d26 50%, #07104
         display: block;
     }
 }
+
+
+
+   .mobile-menu-dropdown {
+            position: relative;
+        }
+
+        .mobile-menu-dropdown .dropdown-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-menu-dropdown.active .dropdown-icon {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        /* Mobile dropdown submenu styles */
+        .mobile-submenu {
+            display: none;
+            padding-left: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .mobile-submenu.active {
+            display: block;
+            max-height: 500px;
+            /* Adjust as needed */
+        }
+
+        .mobile-submenu li {
+            padding: 10px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .mobile-submenu li:last-child {
+            border-bottom: none;
+        }
+
+        /* Floating Contact Icons */
+        .floating-contact-icons {
+            position: fixed;
+            right: 20px;
+            bottom: 120px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-icon {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+        }
+
+        .phone-icon {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+        }
+
+        .contact-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+            animation: none;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            50% {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 0 10px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        .phone-icon {
+            animation-delay: 0.5s;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .floating-contact-icons {
+                right: 15px;
+                bottom: 100px;
+            }
+            
+            .contact-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .scroll-top-btn.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top-btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        /* Icon styles */
+        .arrow-up {
+            width: 12px;
+            height: 12px;
+            border-top: 3px solid white;
+            border-left: 3px solid white;
+            transform: rotate(45deg);
+            margin-top: 5px;
+        }

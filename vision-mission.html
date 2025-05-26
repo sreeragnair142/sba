@@ -148,6 +148,17 @@
             </div>
         </header>
         <!-- end Header -->
+
+
+          <!-- Floating Contact Icons -->
+        <div class="floating-contact-icons">
+            <a href="https://wa.me/966543387680" target="_blank" class="contact-icon whatsapp-icon" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="tel:+966543387680" class="contact-icon phone-icon" title="Call Us">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
         <!-- Pagetitle -->
         <main>
             <section class="heroo">
@@ -335,6 +346,26 @@
 
 
 
+ <script>
+        $(document).ready(function () {
+            // Show or hide the scroll top button
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#scroll-top').addClass('show');
+                } else {
+                    $('#scroll-top').removeClass('show');
+                }
+            });
+
+            // Scroll to top when button is clicked
+            $('#scroll-top').click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        });
+    </script>
 
 
     <script src="app/js/jquery.min.js"></script>
